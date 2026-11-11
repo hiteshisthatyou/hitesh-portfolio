@@ -84,6 +84,9 @@ export default function Portfolio() {
   const heroArtRef = useRef(null);
   const journeyRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeProject, setActiveProject] = useState(null);
+  const [introOpen, setIntroOpen] = useState(false);
+  const [skillFilter, setSkillFilter] = useState("All");
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -129,9 +132,9 @@ export default function Portfolio() {
           <a href="#approach" onClick={closeMenu}>Approach</a>
         </nav>
         <div className="header-actions">
-          <a className="header-social" href="https://wa.me/917987745959?text=Hey%20Hitesh%2C%20let%27s%20connect." target="_blank" rel="noreferrer" aria-label="WhatsApp">WhatsApp</a>
-          <a className="header-social" href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
-          <a className="header-social header-email" href="mailto:hiteshvishwakarma9@gmail.com" aria-label="Email">Email</a>
+          <a className="social-mini" href="https://wa.me/917987745959?text=Hey%20Hitesh%2C%20let%27s%20connect." target="_blank" rel="noreferrer" aria-label="WhatsApp">WA</a>
+          <a className="social-mini" href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a className="social-mini" href="mailto:hiteshvishwakarma9@gmail.com" aria-label="Email">@</a>
           <a className="header-cta" href="/HiteshVishwakarmaCV.pdf" download>Download CV <span>↓</span></a>
         </div>
         <button className="menu-toggle" aria-label="Toggle menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(v => !v)}>{menuOpen ? "×" : "☰"}</button>
@@ -144,11 +147,12 @@ export default function Portfolio() {
             <div className="hero-kicker"><span className="status-dot" /> THE PROFILE</div>
             <p className="chapter-count">CHAPTER <b>00</b> / 07</p>
             <h1 className="neon-title">From<br/>customer<br/>signals to<br/><em>systems.</em></h1>
-            <p className="neon-intro">I turn complex financial workflows<br/>into reliable, scalable operations.<br/><span className="hero-role-line">Product Operations · Business Execution · Data &amp; Automation</span></p>
+            <p className="neon-intro">I turn complex financial workflows<br/>into reliable, scalable operations.</p>
             <p className="neon-tags">PRODUCT OPERATIONS&nbsp; · &nbsp;FINTECH&nbsp; · &nbsp;SYSTEMS THINKING</p>
             <div className="neon-actions">
-              <a className="neon-primary" href="#journey"><span>▶</span> Start the Story</a>
-              <a className="neon-secondary" href="/HiteshVishwakarmaCV.pdf" download><span>↓</span> Download CV</a>
+              <a className="neon-primary" href="#journey"><span>▶</span> Explore My Story</a>
+              <button className="neon-secondary" type="button" onClick={() => setIntroOpen(true)}><span>▣</span> 1-minute intro</button>
+              <a className="neon-secondary" href="/HiteshVishwakarmaCV.pdf" download><span>↓</span> View CV</a>
             </div>
           </div>
 
@@ -213,11 +217,27 @@ export default function Portfolio() {
                   {project.visual === "launch" && <><div className="launch-number">70<span>+</span></div><div className="launch-caption">LIVE BOND LISTINGS<br/>DAILY OPERATIONS</div><div className="launch-lines" /></>}
                   {project.visual === "quality" && <><div className="quality-ring"><span>RCA</span></div><div className="quality-tags"><b>DETECT</b><b>CONTAIN</b><b>VERIFY</b></div></>}
                 </div>
-                <div className="work-content"><div className="work-meta"><span>{project.number} / {project.type}</span><span>{project.tools}</span></div><h3>{project.title}</h3><p>{project.copy}</p>{project.metric && <div className="work-result"><strong>{project.metric}</strong><span>{project.metricCopy}</span></div>}</div>
+                <div className="work-content"><div className="work-meta"><span>{project.number} / {project.type}</span><span>{project.tools}</span></div><h3>{project.title}</h3><p>{project.copy}</p>{project.metric && <div className="work-result"><strong>{project.metric}</strong><span>{project.metricCopy}</span></div>}<button className="case-link" type="button" onClick={() => setActiveProject(project)}>Explore case study <span>↗</span></button></div>
               </Reveal>
             ))}
           </div>
           <div className="platform-note"><span className="note-mark">↗</span><p>During my time at Wint Wealth, I supported operational workflows as the platform’s monthly transaction volume scaled from approximately <strong>₹50 Cr to ₹800+ Cr</strong>. This is platform growth, not an individual-attribution claim.</p></div>
+        </section>
+
+        <section className="impact-section section-shell" id="impact">
+          <SectionLabel number="04">IMPACT, IN NUMBERS</SectionLabel>
+          <Reveal><div className="impact-heading"><h2>Small process fixes.<br/><em>Meaningful operating leverage.</em></h2><p>Selected outcomes from workflows I helped improve. Figures reflect the work described in my experience, not platform-wide attribution.</p></div></Reveal>
+          <div className="impact-grid">
+            <div className="impact-card"><strong>45<span>%</span></strong><p>Fewer KYC verification errors</p><small>Automated verification workflow</small></div>
+            <div className="impact-card"><strong>30<span>%</span></strong><p>Faster onboarding turnaround</p><small>KYC workflow improvement</small></div>
+            <div className="impact-card"><strong>70–80<span>%</span></strong><p>Less manual tracking effort</p><small>Alerts for record dates, repayments and FD rate updates</small></div>
+            <div className="impact-card"><strong>30<span>%</span></strong><p>Faster response and resolution</p><small>Six Sigma DMAIC initiative at Amazon Pay</small></div>
+          </div>
+        </section>
+
+        <section className="beyond-section section-shell" id="beyond">
+          <SectionLabel number="05">OUTSIDE THE WORKFLOW</SectionLabel>
+          <div className="beyond-grid"><div><p className="eyebrow">A LITTLE MORE HUMAN</p><h2>Curiosity doesn't<br/><em>clock out.</em></h2></div><div className="beyond-copy"><p>Photography teaches me to notice details. Music gives me room to experiment. Travel and long rides help me reset and return with a wider lens.</p><div className="beyond-tags"><span>Photography</span><span>Music & guitar</span><span>Motorcycling</span><span>Reading</span><span>Cooking</span></div></div></div>
         </section>
 
         <section id="approach" className="approach-section">
@@ -235,17 +255,19 @@ export default function Portfolio() {
                 ].map(([n,t,d],i)=><Reveal key={n} delay={i*.06}><div className="principle"><span>{n}</span><div><h3>{t}</h3><p>{d}</p></div><b>↗</b></div></Reveal>)}
               </div>
             </div>
-            <Reveal><div className="skills-wrap"><div className="skills-title"><span>TOOLKIT</span><span>THE WORKBENCH</span></div><div className="skill-cloud">{skills.map(s=><span key={s}>{s}</span>)}</div></div></Reveal>
+            <Reveal><div className="skills-wrap"><div className="skills-title"><span>TOOLKIT</span><span>THE WORKBENCH</span></div><div className="skill-filters">{["All","Product","Fintech","Data & Automation","Risk & Controls"].map(x=><button type="button" className={skillFilter===x?"selected":""} onClick={()=>setSkillFilter(x)} key={x}>{x}</button>)}</div><div className="skill-cloud">{skills.filter(s=>skillFilter==="All" || (skillFilter==="Product" && ["Product Operations","UAT","Stakeholder Management","SOP Design"].includes(s)) || (skillFilter==="Fintech" && ["Fixed Income","API Operations"].includes(s)) || (skillFilter==="Data & Automation" && ["SQL","Excel","Metabase","Mixpanel","Google Apps Script","Process Automation"].includes(s)) || (skillFilter==="Risk & Controls" && ["AML / KYC","Fraud Analysis","Root Cause Analysis"].includes(s))).map(s=><span key={s}>{s}</span>)}</div></div></Reveal>
           </div>
         </section>
 
         <section id="contact" className="closing-section section-shell">
           <div className="closing-orb" aria-hidden="true" />
           <SectionLabel number="05">THE NEXT CHAPTER</SectionLabel>
-          <Reveal><div className="closing-copy"><p className="eyebrow">OPEN TO THE RIGHT OPPORTUNITY</p><h2>Let’s make<br/>complex things<br/><em>work beautifully.</em></h2><p>Interested in Product Operations, Fintech Operations and roles where thoughtful execution makes a measurable difference.</p><a className="contact-link" href="mailto:hiteshvishwakarma9@gmail.com">hiteshvishwakarma9@gmail.com <span>↗</span></a><div className="contact-actions"><a href="https://wa.me/917987745959?text=Hey%20Hitesh%2C%20let%27s%20connect." target="_blank" rel="noreferrer">WhatsApp ↗</a><a href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/HiteshVishwakarmaCV.pdf" download>Download CV ↓</a></div></div></Reveal>
-          <div className="closing-bottom"><span>HITESH VISHWAKARMA © 2026</span><div><a href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:hiteshvishwakarma9@gmail.com">EMAIL ↗</a><a href="https://wa.me/917987745959?text=Hey%20Hitesh%2C%20let%27s%20connect." target="_blank" rel="noreferrer">WHATSAPP ↗</a></div><a href="#top">BACK TO TOP ↑</a></div>
+          <Reveal><div className="closing-copy"><p className="eyebrow">OPEN TO THE RIGHT OPPORTUNITY</p><h2>Let’s make<br/>complex things<br/><em>work beautifully.</em></h2><p>Interested in Product Operations, Fintech Operations and roles where thoughtful execution makes a measurable difference.</p><div className="contact-actions"><a className="contact-link" href="mailto:hiteshvishwakarma9@gmail.com">Email me <span>↗</span></a><a className="contact-link" href="https://wa.me/917987745959?text=Hey%20Hitesh%2C%20let%27s%20connect." target="_blank" rel="noreferrer">WhatsApp <span>↗</span></a><a className="contact-link" href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a className="contact-link" href="/HiteshVishwakarmaCV.pdf" download>Download CV <span>↓</span></a></div></div></Reveal>
+          <div className="closing-bottom"><span>HITESH VISHWAKARMA © 2026</span><div><a href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:hiteshvishwakarma9@gmail.com">EMAIL ↗</a></div><a href="#top">BACK TO TOP ↑</a></div>
         </section>
       </main>
+      {introOpen && <div className="modal-backdrop" role="presentation" onClick={() => setIntroOpen(false)}><section className="story-modal" role="dialog" aria-modal="true" aria-labelledby="intro-title" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setIntroOpen(false)} aria-label="Close">×</button><p className="eyebrow">A QUICK INTRODUCTION</p><h2 id="intro-title">Hi, I’m Hitesh.</h2><p>I’m a fintech product-operations professional with 6+ years across payments and investment products. I work across launch execution, operational controls, issue investigation, data analysis and workflow automation.</p><p>At Wint Wealth, I supported fixed-income product operations across bonds, Bond SIPs, FDs and RDs. Before that, I worked in Amazon Pay and PhonePe payment operations, building a strong foundation in customer context, risk and execution.</p><p>I’m now looking for roles where I can bring product thinking, operational ownership and analytical problem-solving together.</p><div className="modal-actions"><a className="neon-primary" href="/HiteshVishwakarmaCV.pdf" download>Download CV ↓</a><a className="neon-secondary" href="mailto:hiteshvishwakarma9@gmail.com">Get in touch ↗</a></div></section></div>}
+      {activeProject && <div className="modal-backdrop" role="presentation" onClick={() => setActiveProject(null)}><section className="story-modal case-modal" role="dialog" aria-modal="true" aria-labelledby="case-title" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setActiveProject(null)} aria-label="Close">×</button><p className="eyebrow">{activeProject.type} · CASE STUDY</p><h2 id="case-title">{activeProject.title}</h2><div className="case-detail-grid"><div><span>THE CHALLENGE</span><p>Operational information was spread across manual checks and handoffs, making accuracy, visibility and timely action harder to maintain at scale.</p></div><div><span>MY APPROACH</span><p>{activeProject.copy}</p></div><div><span>TOOLS & CONTROLS</span><p>{activeProject.tools}. Validation checks, exception visibility and clear ownership were central to the workflow.</p></div><div><span>OUTCOME</span><p><strong>{activeProject.metric}</strong> {activeProject.metricCopy}. Final operational decisions remained subject to appropriate review and controls.</p></div></div><p className="case-footnote">This is a high-level portfolio summary. Confidential partner, customer and internal platform information is intentionally excluded.</p></section></div>}
     </>
   );
 }
