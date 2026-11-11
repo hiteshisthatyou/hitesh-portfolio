@@ -80,3 +80,9 @@ The site includes semantic landmarks, labelled controls, keyboard-operable nativ
 - [ ] Test all links, mobile layouts, keyboard navigation and screen readers.
 - [ ] Run `npm run build` and resolve any errors.
 - [ ] Check Vercel domain and DNS status.
+
+
+## Update notes (November 2026)
+- The intro-film placeholder has been removed until the final recording is supplied.
+- The Visual Journal section and navigation link have been hidden until personal photographs are supplied.
+- Kannada translations have been expanded across the main page labels and explanatory copy. Product/company names, technical terms, and some source profile fields remain in their original form where preserving exact terminology is useful. Review the Kannada version before publishing.
