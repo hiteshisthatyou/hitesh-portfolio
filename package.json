@@ -1,13 +1,23 @@
 {
-  "name": "hitesh-cinematic-portfolio",
-  "version": "1.0.0",
+  "name": "hitesh-vishwakarma-portfolio",
+  "version": "2.0.0",
   "private": true,
-  "scripts": {"dev": "next dev", "build": "next build", "start": "next start"},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "framer-motion": "^11.11.17",
-    "gsap": "^3.12.5",
+    "lucide-react": "^0.468.0",
     "next": "15.5.29",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2"
   }
 }
