@@ -78,3 +78,52 @@ body{background:#080d20;color:#f4f5ff}
 /* Clean portrait framing: no duplicated greeting or chapter-dot overlay */
 .neon-portrait img{inset:5% 0 0 0;width:100%;height:94%;object-fit:cover;object-position:center 30%;mask-image:linear-gradient(180deg,#000 78%,transparent 100%)}
 .chapter-rail,.handwritten-intro,.rotate-note{display:none!important}
+
+/* MOBILE POLISH + DIRECT WHATSAPP CONTACT */
+.contact-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px 28px}
+.whatsapp-link{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border:1px solid rgba(37,211,102,.55);border-radius:16px;background:rgba(37,211,102,.09);color:#17251b;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+.whatsapp-link:hover{transform:translateY(-3px);background:rgba(37,211,102,.16);box-shadow:0 10px 30px rgba(37,211,102,.14)}
+.whatsapp-link svg{width:25px;height:25px;fill:#159b4a;flex:none}
+.whatsapp-link span{display:grid;gap:3px}
+.whatsapp-link strong{font:600 12px var(--sans)}
+.whatsapp-link small{font:9px var(--mono);color:#59675b}
+.whatsapp-link>b{font-size:15px;color:#159b4a;margin-left:5px}
+@media(max-width:700px){
+  html{scroll-padding-top:72px}
+  .site-header.neon-header{height:68px;padding:12px 5%;}
+  .neon-header .brand{font-size:27px}
+  .neon-header .header-cta{padding:8px 11px;margin-right:9px;font-size:10px}
+  .neon-header .menu-toggle{font-size:20px;padding:6px 9px}
+  .neon-header nav.nav-open{z-index:40;box-shadow:0 18px 38px rgba(0,0,0,.3)}
+  .neon-hero{height:auto;min-height:0;padding:105px 7% 82px;display:block;isolation:isolate;}
+  .neon-hero-copy{padding:0;max-width:100%;}
+  .neon-hero .hero-kicker{font-size:10px;letter-spacing:.16em;margin-bottom:28px}
+  .chapter-count{font-size:10px;margin-bottom:17px}
+  .neon-title{font-size:clamp(49px,12.7vw,68px);line-height:.94;letter-spacing:-.075em;max-width:100%;}
+  .neon-intro{font-size:15px;line-height:1.55;margin:22px 0 15px;max-width:340px}
+  .neon-intro br{display:none}
+  .neon-tags{font-size:8px;line-height:1.8;letter-spacing:.06em;max-width:320px;margin-bottom:23px}
+  .neon-actions{gap:10px;align-items:stretch;flex-wrap:wrap}
+  .neon-primary,.neon-secondary{min-height:46px;padding:12px 15px;font-size:12px;justify-content:center}
+  .neon-portrait{position:relative;left:auto;right:auto;bottom:auto;height:auto;width:calc(100% + 14vw);margin:10px -7vw -82px;aspect-ratio:1.18;opacity:1;z-index:1;overflow:hidden;transform:none}
+  .neon-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 27%;mask-image:linear-gradient(180deg,#000 0%,#000 76%,transparent 100%);}
+  .portrait-vignette{background:linear-gradient(180deg,rgba(16,23,53,.04),transparent 50%,#080d20 100%)}
+  .scroll-cue{left:7%;bottom:20px;font-size:9px;z-index:8}
+  .hero-signature{right:5%;bottom:20px;font-size:7px;padding:8px 9px;z-index:8}
+  .closing-section{min-height:760px;padding-top:85px;padding-bottom:130px}
+  .closing-copy{margin-top:65px}
+  .closing-copy h2{font-size:clamp(51px,12vw,76px);line-height:.93;letter-spacing:-.085em}
+  .closing-copy>p:not(.eyebrow){font-size:13px;max-width:340px}
+  .contact-actions{align-items:stretch;flex-direction:column;gap:17px;max-width:100%}
+  .contact-link{width:fit-content;max-width:100%;font-size:10px;overflow-wrap:anywhere}
+  .whatsapp-link{width:100%;max-width:360px;min-height:58px;padding:12px 15px}
+  .whatsapp-link strong{font-size:13px}
+  .whatsapp-link small{font-size:9px}
+}
+@media(max-width:380px){
+  .neon-title{font-size:12.4vw}
+  .neon-primary,.neon-secondary{font-size:11px;padding:11px 12px}
+  .hero-signature{font-size:6px}
+  .closing-copy h2{font-size:13vw}
+}
+@media(prefers-reduced-motion:reduce){.whatsapp-link{transition:none}}

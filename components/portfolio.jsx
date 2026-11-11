@@ -237,7 +237,13 @@ export default function Portfolio() {
         <section id="contact" className="closing-section section-shell">
           <div className="closing-orb" aria-hidden="true" />
           <SectionLabel number="05">THE NEXT CHAPTER</SectionLabel>
-          <Reveal><div className="closing-copy"><p className="eyebrow">OPEN TO THE RIGHT OPPORTUNITY</p><h2>Let’s make<br/>complex things<br/><em>work beautifully.</em></h2><p>Interested in Product Operations, Fintech Operations and roles where thoughtful execution makes a measurable difference.</p><a className="contact-link" href="mailto:hiteshvishwakarma9@gmail.com">hiteshvishwakarma9@gmail.com <span>↗</span></a></div></Reveal>
+          <Reveal><div className="closing-copy"><p className="eyebrow">OPEN TO THE RIGHT OPPORTUNITY</p><h2>Let’s make<br/>complex things<br/><em>work beautifully.</em></h2><p>Interested in Product Operations, Fintech Operations and roles where thoughtful execution makes a measurable difference.</p><div className="contact-actions">
+              <a className="contact-link" href="mailto:hiteshvishwakarma9@gmail.com">hiteshvishwakarma9@gmail.com <span>↗</span></a>
+              <a className="whatsapp-link" href="https://wa.me/917987745959?text=Hey%20Hitesh%2C%20let%27s%20connect." target="_blank" rel="noreferrer" aria-label="Message Hitesh on WhatsApp">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.8 11.8 0 0 0 5.7 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.8-9.8 9.8Zm5.4-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4Z"/></svg>
+                <span><strong>WhatsApp me</strong><small>Message Hitesh, let’s connect</small></span><b>↗</b>
+              </a>
+            </div></div></Reveal>
           <div className="closing-bottom"><span>HITESH VISHWAKARMA © 2026</span><div><a href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="mailto:hiteshvishwakarma9@gmail.com">EMAIL ↗</a></div><a href="#top">BACK TO TOP ↑</a></div>
         </section>
       </main>
