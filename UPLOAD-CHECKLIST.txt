@@ -9,8 +9,6 @@ UPLOAD CHECKLIST
 7. Once deployed, test the Vercel preview before assigning/using the custom domain.
 
 IMPORTANT BEFORE PUBLIC LAUNCH
-- Replace public/images/portrait-placeholder.jpg with Hitesh's new professional portrait (same filename).
-- Add the curated original photographs. Gallery placeholders are intentionally marked.
 - Record and add the 30-second intro video; instructions are in README.md.
 - Complete Hindi and Kannada translation for all project/dashboard/skills content. Current language control translates the primary interface copy, not every detailed data field yet.
 - Configure actual GA4/Vercel analytics consent gating and privacy notice. The package includes a consent UI placeholder, not a live analytics integration.

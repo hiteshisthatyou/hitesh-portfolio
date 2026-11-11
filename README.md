@@ -40,7 +40,7 @@ Replace `public/images/portrait-placeholder.jpg` with your new professional port
 
 ## Add Visual Journal photographs
 
-Place your own optimised JPG/WebP images in `public/images/`. The current gallery blocks are placeholders. Connect your selected image paths in `components/Portfolio.tsx` when adding the final gallery images. Recommended: 1600–2200px wide, compressed WebP, descriptive filenames and meaningful alt text.
+The Visual Journal is currently hidden. Add it only when a curated set of original photographs is ready. WebP, descriptive filenames and meaningful alt text.
 
 ## Add the 30-second introduction video
 
@@ -63,7 +63,7 @@ The package includes a consent UI state placeholder, not a live GA4 or Vercel An
 - Analytics funnel data is synthetic and illustrative.
 - No testimonials are included.
 - Education and certifications are shown without unverified issuers, years or certificate links.
-- The portrait, Visual Journal photos and introductory video are placeholders awaiting Hitesh's own assets.
+- The existing portrait is retained. The introductory video and Visual Journal sections are hidden until real assets are intentionally added.
 
 ## Accessibility and motion
 
@@ -71,7 +71,7 @@ The site includes semantic landmarks, labelled controls, keyboard-operable nativ
 
 ## Before public launch checklist
 
-- [ ] Replace portrait placeholder with new professional portrait.
+- [x] Retain existing portrait from the current website.
 - [ ] Add curated landscape/travel photographs.
 - [ ] Record and add the 30-second intro video with captions.
 - [ ] Verify all role dates, metrics, contact details and certifications.
