@@ -268,3 +268,17 @@ main{padding-top:78px}
   .topbar,.wordmark i{animation:none!important}
   .wordmark-mark,.topbar .nav a:after,.career-card,.career-node{transition:none!important}
 }
+
+/* HITESH 2.7: visible employer brand marks in the career timeline */
+.career-brand{display:flex;align-items:center;gap:13px;margin:10px 0 8px;min-height:48px}
+.company-logo{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px}
+.company-logo svg{display:block;width:100%;height:100%;overflow:visible}
+.company-logo-2{width:68px;flex-basis:68px}
+.company-brand-name{font:750 clamp(25px,2.7vw,34px)/1 Manrope,sans-serif;letter-spacing:-.055em;color:var(--ink)}
+.career-main h4{margin-top:6px}
+@media(max-width:620px){
+  .career-brand{margin:8px 0 7px;gap:11px}
+  .company-logo{width:39px;height:39px;flex-basis:39px}
+  .company-logo-2{width:61px;flex-basis:61px}
+  .company-brand-name{font-size:27px}
+}

@@ -41,3 +41,8 @@ ZIP integrity checked. A complete Next.js production build has not been run in t
 - Reworked the career journey into a vertical editorial timeline with connected markers, hover emphasis, staggered reveal timing and responsive mobile stacking.
 - Preserved the existing career content, metrics, expandable details, photography gallery, CV and interactive tools.
 - Retained the Motion on/off and reduced-motion accessibility behaviours.
+
+## HITESH 2.7: employer logo visibility
+- Added visible brand marks alongside PhonePe, Amazon Pay and Wint Wealth in the career timeline.
+- Each mark is a locally embedded SVG, so it does not rely on remote image hosts or third-party scripts.
+- Kept company names as readable wordmarks and screen-reader headings, with responsive sizing for mobile.
