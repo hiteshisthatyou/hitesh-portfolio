@@ -46,3 +46,25 @@ ZIP integrity checked. A complete Next.js production build has not been run in t
 - Added visible brand marks alongside PhonePe, Amazon Pay and Wint Wealth in the career timeline.
 - Each mark is a locally embedded SVG, so it does not rely on remote image hosts or third-party scripts.
 - Kept company names as readable wordmarks and screen-reader headings, with responsive sizing for mobile.
+
+## HITESH 3.0: light cinematic portfolio
+- Removed all employer logo illustrations. PhonePe, Amazon Pay and Wint Wealth are displayed as clean typographic headings.
+- Preserved the existing personal HITESH wordmark, fixed navigation, language selector, motion toggle, profile content, CV, career details, projects, case studies, recruiter paths, analytics simulator and contact links.
+- Added a light cinematic opening treatment with staggered typography, portrait depth, soft radial light and restrained motion.
+- Made each Product Lab framework stage selectable, with a stage-specific decision prompt and a reset to stage one when a new challenge is selected.
+- Added a full-screen photography lightbox with previous/next controls and links to each original Instagram post.
+- Retained reduced-motion and motion-off support for new visual effects.
+- Kept existing locally hosted WebP photography assets. No Instagram embed dependency is reintroduced.
+
+## Validation
+- ZIP archive integrity checked.
+- Confirmed all three local photography assets are included.
+- Confirmed employer-logo SVG block is removed and the company headings are restored.
+- Full Next.js production build has not been run in this environment. Validate with the Vercel deployment.
+
+## HITESH 3.1: interactive-film finishing pass
+- Added a moving scroll cue and editorial chapter labels to make the narrative structure more legible.
+- Added a subtle scroll-linked timeline drawing effect where supported, with graceful static fallback.
+- Added hover depth to work cards and skill groups.
+- Reworked the final contact chapter with a large low-contrast H. typographic watermark, a final-chapter label and refined CTA interactions.
+- Preserved the light palette, content, local photography, interactive Product Lab, decision model, analytics, navigation, language selector and accessibility motion controls.
