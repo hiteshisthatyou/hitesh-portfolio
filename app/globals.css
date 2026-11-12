@@ -164,25 +164,15 @@
   .decision-result>strong.decision-score>small{font-size:18px}
 }
 
-/* HITESH 2.5: hands-on Product Challenge Lab simulator */
-.lab-simulator{margin-top:26px;padding:24px;border:1px solid var(--line);background:rgba(255,255,255,.72)}
-.simulator-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:20px}
-.simulator-heading h4{font:750 clamp(20px,2.2vw,27px)/1.12 Manrope;letter-spacing:-.045em;margin:12px 0 0;color:var(--ink)}
-.sim-reset{border:1px solid var(--line);background:transparent;border-radius:30px;padding:9px 15px;font-size:12px;color:var(--ink);cursor:pointer;transition:background .2s ease,color .2s ease}
-.sim-reset:hover{background:var(--ink);color:#fff}
-.simulator-body{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:16px}
-.simulator-controls{display:flex;flex-direction:column;gap:17px;padding:20px;background:#f4f5ef;border:1px solid #e4e6dc}
-.sim-control{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;align-items:baseline;font-size:12px;color:#5f635a}
-.sim-control>strong{font-size:12px;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
-.sim-control input{grid-column:1/-1;width:100%;accent-color:#83b63d;cursor:pointer}
-.simulator-results{padding:22px;background:#171a15;color:#f6f7f1;display:flex;flex-direction:column;justify-content:center;min-height:245px}
-.sim-result-label{font:700 9px 'DM Mono',monospace;letter-spacing:.14em;color:#b6f36b;margin-bottom:18px}
-.sim-result-primary,.sim-result-secondary{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15)}
-.sim-result-primary span,.sim-result-secondary span{font-size:11px;line-height:1.45;color:#c5c9bf;max-width:60%}
-.sim-result-primary strong{font:800 clamp(27px,3vw,40px)/1 Manrope;letter-spacing:-.055em;color:#b6f36b;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.sim-result-secondary strong{font:700 18px Manrope;text-align:right;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
-.simulator-results>p{font-size:10px;line-height:1.65;color:#aeb5a5;margin:14px 0 0}
-.sim-disclaimer{font-size:10px;line-height:1.6;color:var(--muted);margin:13px 0 0}
-@media(max-width:900px){.simulator-body{grid-template-columns:1fr}}
-@media(max-width:620px){.lab-simulator{padding:15px;margin-top:20px}.simulator-heading{align-items:center}.simulator-heading h4{font-size:20px}.simulator-controls,.simulator-results{padding:17px}.sim-result-primary strong{font-size:28px}.sim-result-secondary strong{font-size:16px}}
-@media(prefers-reduced-motion:reduce){.sim-reset{transition:none}}
+/* Reliable local photography gallery: no third-party Instagram embed dependency */
+.instagram-grid{display:none!important}
+.photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px;align-items:start}
+.photo-tile{position:relative;display:block;overflow:hidden;aspect-ratio:1/1;background:#e9eae5;border:1px solid var(--line);color:#fff;text-decoration:none}
+.photo-tile img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s ease}
+.photo-tile:hover img{transform:scale(1.045);filter:brightness(.78)}
+.photo-open{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:20px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.68));font:11px 'DM Mono',monospace;letter-spacing:.06em;opacity:0;transform:translateY(7px);transition:opacity .25s ease,transform .25s ease}
+.photo-tile:hover .photo-open,.photo-tile:focus-visible .photo-open{opacity:1;transform:translateY(0)}
+.photo-tile:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media(max-width:900px){.photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(max-width:620px){.photo-gallery{grid-template-columns:1fr;gap:16px}.photo-open{opacity:1;transform:none;padding:16px 14px 12px}}
+@media(prefers-reduced-motion:reduce){.photo-tile img,.photo-open{transition:none}.photo-tile:hover img{transform:none}}

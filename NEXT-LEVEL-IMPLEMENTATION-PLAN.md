@@ -29,10 +29,8 @@ ZIP integrity checked. A complete Next.js production build has not been run in t
 - Added baseline alignment, a clear horizontal gap, tabular numerals and responsive sizing.
 - Prevents the score and denominator from colliding on desktop and mobile.
 
-## HITESH 2.5: Product Challenge Lab simulation
-- Added challenge-specific interactive simulators for all seven hypothetical challenges.
-- Each scenario has three adjustable inputs, scenario-specific ranges/defaults, and live recalculated outcomes.
-- Added reset-to-default controls for each selected challenge.
-- Added explicit synthetic/hypothetical-data disclaimers to avoid presenting model outputs as actual employer results.
-- Models cover onboarding completion, journey recovery, adoption, analytics capacity, pricing index, financial-product comprehension and operational capacity.
-- Existing portfolio sections, Decision Studio, CV, contact links, recruiter pathways, Visual Journal, language selector and motion preferences are retained.
+## Photography gallery reliability fix
+- Replaced Instagram's third-party embedded post widgets with locally hosted, optimised WebP previews supplied by the user.
+- Each photograph links to its corresponding original Instagram post.
+- Removed the dependency on Instagram's embed.js script, avoiding blank embed frames on mobile Safari and browsers with embed restrictions.
+- Added responsive gallery layout, hover/focus treatment, accessible alt text and reduced-motion support.
