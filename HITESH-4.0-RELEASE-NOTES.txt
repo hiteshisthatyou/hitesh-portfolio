@@ -1,0 +1,27 @@
+HITESH 4.0 — CINEMATIC REBUILD
+
+Built from the HITESH 3.1 Interactive Film source.
+
+What changed:
+- New editorial hero composition with stronger portrait framing and clearer visual hierarchy.
+- Persistent desktop chapter rail for quick navigation through the story.
+- Career journey redesigned as a two-column narrative with a sticky experience introduction and stronger role/impact hierarchy.
+- Selected work cards redesigned as a more editorial, asymmetrical-feeling grid with clearer case-study focus.
+- Stronger visual chapter transitions and a more deliberate closing section.
+- Responsive layouts for tablet and mobile, with the chapter rail hidden on smaller screens.
+- Reduced-motion and existing motion controls remain supported.
+
+Preserved:
+- Existing career facts, case studies, metrics, CV, photography, contact links, language selector,
+  Product Lab, Decision Studio, analytics simulator, recruiter views and existing interactions.
+- Employer logos remain removed.
+
+Deployment:
+1. Extract this ZIP.
+2. Replace the repository files with the contents of Hitesh_Portfolio_Final.
+3. Commit and push to the main branch.
+4. Wait for Vercel to finish the deployment, then hard-refresh the live site.
+
+Validation:
+- ZIP integrity checked after creation.
+- A full Next.js production build was not run in this environment. Vercel's deployment build is the final validation.
