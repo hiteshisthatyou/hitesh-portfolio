@@ -50,7 +50,7 @@ export default function Portfolio(){const [lang,setLang]=useState<'en'|'hi'|'kn'
     <label>Implementation effort <strong>{effort}/10</strong><input type="range" min="1" max="10" value={effort} onChange={e=>setEffort(Number(e.target.value))}/></label>
     <p className="caveat">Try high impact, strong evidence and low effort. The model deliberately keeps the formula simple so the trade-off is visible.</p>
    </div>
-   <div className="decision-result"><span className="tag">ILLUSTRATIVE PRIORITY SCORE</span><strong>{Math.round((impact*confidence/effort)*10)/10}<small> / 100</small></strong><div className="priority-track"><span style={{width:`${Math.min(100,impact*confidence/effort*10)}%`}}/></div><h3>{impact*confidence/effort>=12?'Worth testing early':impact*confidence/effort>=6?'Validate the assumptions':'Revisit the opportunity'}</h3><p>Impact × confidence ÷ effort. A useful conversation starter, not a substitute for customer evidence or team judgement.</p></div>
+   <div className="decision-result"><span className="tag">ILLUSTRATIVE PRIORITY SCORE</span><strong className="decision-score"><span>{Math.round((impact*confidence/effort)*10)/10}</span><small>/ 100</small></strong><div className="priority-track"><span style={{width:`${Math.min(100,impact*confidence/effort*10)}%`}}/></div><h3>{impact*confidence/effort>=12?'Worth testing early':impact*confidence/effort>=6?'Validate the assumptions':'Revisit the opportunity'}</h3><p>Impact × confidence ÷ effort. A useful conversation starter, not a substitute for customer evidence or team judgement.</p></div>
   </div>
  </div>
 </section>

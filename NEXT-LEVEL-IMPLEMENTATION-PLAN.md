@@ -23,3 +23,8 @@ ZIP integrity checked. A complete Next.js production build has not been run in t
 - The supporting explanation and measurement takeaway also change with the selected challenge.
 - Framework cards use the selected challenge as their React key so the content refreshes reliably.
 - The exercises remain hypothetical and clearly labelled as such.
+
+## Decision Studio score readability fix
+- Separated the calculated score and its `/ 100` scale into distinct inline elements.
+- Added baseline alignment, a clear horizontal gap, tabular numerals and responsive sizing.
+- Prevents the score and denominator from colliding on desktop and mobile.
