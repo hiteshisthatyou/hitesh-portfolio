@@ -34,3 +34,10 @@ ZIP integrity checked. A complete Next.js production build has not been run in t
 - Each photograph links to its corresponding original Instagram post.
 - Removed the dependency on Instagram's embed.js script, avoiding blank embed frames on mobile Safari and browsers with embed restrictions.
 - Added responsive gallery layout, hover/focus treatment, accessible alt text and reduced-motion support.
+
+## HITESH 2.6: visual identity and career storytelling
+- Replaced the generic HV text mark with a responsive HITESH signature monogram/wordmark.
+- Made the top navigation persist as a fixed, blurred header during scroll and reserved layout space to prevent content overlap.
+- Reworked the career journey into a vertical editorial timeline with connected markers, hover emphasis, staggered reveal timing and responsive mobile stacking.
+- Preserved the existing career content, metrics, expandable details, photography gallery, CV and interactive tools.
+- Retained the Motion on/off and reduced-motion accessibility behaviours.
