@@ -1,0 +1,14 @@
+HITESH 4.0.1 — RECRUITER VIEW CONTENT FIX
+
+Fixed the role selector in section 07 / FIND YOUR ANGLE.
+
+The three proof points now change with the selected hiring perspective:
+- Product Operations: 70–80% less manual tracking; 60–70+ bond launches/month; 45% fewer KYC errors.
+- Product Management: 30% faster onboarding; product analytics & funnel analysis; UAT and release readiness.
+- Business Operations: 30% faster response/resolution; 25% lower resolution time; pricing, reconciliation & partner operations.
+- Strategy & Operations: Six Sigma DMAIC improvement; 6–10 direct reports managed; Top Performer for 8 consecutive quarters.
+
+The role-specific claims are based on the existing portfolio evidence. No new employer logos or unsupported ownership claims were added.
+
+Deploy by replacing the repository files with the contents of Hitesh_Portfolio_Final, committing to main, and waiting for Vercel.
+ZIP integrity is checked. A full Next.js production build has not been run here.
