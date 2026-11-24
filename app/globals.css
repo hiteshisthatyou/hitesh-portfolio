@@ -623,3 +623,9 @@ input[type=range],.slider{accent-color:var(--blue)}
 @media(max-width:760px){.hero{grid-template-columns:1fr}.hero-visual{justify-self:center;max-width:520px;min-height:440px}.visual-core{width:38%}}
 @media(max-width:480px){.hero-visual{min-height:390px}.visual-index{left:16px;right:16px;top:16px}.visual-caption{left:16px;bottom:17px}.visual-coordinate{right:16px;bottom:18px}.visual-node{font-size:7px;padding:7px 8px}}
 @media(prefers-reduced-motion:reduce){.hero-visual *{animation:none!important;transition:none!important}}
+
+/* Minimal wordmark refinement */
+.wordmark-minimal{display:inline-flex;align-items:baseline;gap:0;font:700 16px/1 Manrope,sans-serif;letter-spacing:.16em;color:var(--ink);text-decoration:none}
+.wordmark-minimal span{color:var(--blue);font-size:21px;line-height:0;margin-left:1px}
+.wordmark-minimal:hover{opacity:.68}
+@media(max-width:700px){.wordmark-minimal{font-size:15px;letter-spacing:.14em}}
