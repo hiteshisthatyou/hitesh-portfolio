@@ -1,0 +1,8 @@
+HITESH 5.0 — ROUTED MULTI-PAGE RELEASE
+
+Updated the existing repository directly from its current main-branch source.
+
+Routes created: /about, /experience, /selected-work, /product-lab, /decision-studio, /visual-journal, /contact. Homepage stays at /.
+Shared nav now links to dedicated route paths. The original Portfolio component, profile.json content, experience metrics, case studies, Product Lab state, Decision Studio sliders, funnel simulator, recruiter view, language selector, motion toggle, photo grid/lightbox, CV and contact links are reused to preserve behaviour.
+
+Validation: source edits committed to main. This connector cannot run the Next.js build or browser interaction tests. Check Vercel build logs after commit and test all routes before treating as production validated.
