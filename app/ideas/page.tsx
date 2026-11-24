@@ -18,7 +18,7 @@ export default function IdeasPage() {
         <div className="ideas-copy">{post.text}</div>
         <a className="ideas-original" href={post.url} target="_blank" rel="noopener noreferrer">Read original on LinkedIn ↗</a>
         {post.embedUrl ? <div className="ideas-embed"><iframe src={post.embedUrl} title="Original LinkedIn post" loading="lazy" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div> : null}
-      </article>)}</section> : <section className="ideas-empty"><p className="bond-eyebrow">THE FIRST NOTE IS ON ITS WAY</p><h2>Good thinking deserves a place to live.</h2><p>New writing will appear here after it is published on LinkedIn and added to the archive.</p><a className="ideas-original" href="https://www.linkedin.com/in/hiteshv/" target="_blank" rel="noopener noreferrer">Find me on LinkedIn ↗</a></section>}
+      </article>)}</section> : <section className="ideas-empty"><p className="bond-eyebrow">THE FIRST NOTE IS ON ITS WAY</p><h2>Good thinking deserves a place to live.</h2><p>New writing will appear here after it is published on LinkedIn and added to the archive.</p><a className="ideas-original" href="https://www.linkedin.com/in/hiteshvish/" target="_blank" rel="noopener noreferrer">Find me on LinkedIn ↗</a></section>}
       <footer className="bond-footer"><span>HITESH VISHWAKARMA · IDEAS & PERSPECTIVES</span><Link href="/">Back to portfolio ↗</Link></footer>
     </div>
   </main>;
