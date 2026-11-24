@@ -787,3 +787,13 @@ input[type=range],.slider{accent-color:var(--blue)}
 .hero-word-poster .visual-coordinate{color:#55514b;font-size:7px;bottom:20px;right:20px}
 @media(max-width:760px){.hero-word-poster{min-height:460px;padding:62px 15px 14px}.poster-words{padding-bottom:82px}.poster-xl{font-size:clamp(34px,8.6vw,48px)}.poster-xxl{font-size:clamp(42px,10vw,57px)}.poster-lg{font-size:clamp(26px,6.8vw,38px)}.poster-md{font-size:clamp(18px,4.7vw,27px)}.poster-last{font-size:clamp(15px,3.8vw,22px)}.poster-footer{left:15px;bottom:14px}.hero-word-poster .visual-coordinate{right:15px;bottom:16px}}
 @media(max-width:380px){.hero-word-poster{min-height:410px}.poster-xl{font-size:33px}.poster-xxl{font-size:40px}.poster-lg{font-size:24px}.poster-md{font-size:17px}.poster-last{font-size:14px}}
+
+
+/* Keep the chapter directory from leaving clipped text fragments on narrow/tablet viewports */
+.chapter-directory,.chapter-directory-head,.chapter-directory-grid,.chapter-directory-grid a{min-width:0;max-width:100%}
+.chapter-directory-grid a{overflow-wrap:anywhere}
+@media(max-width:850px){
+ .chapter-directory{width:min(100% - 38px,650px);margin-inline:auto}
+ .chapter-directory-grid{grid-template-columns:minmax(0,1fr)}
+ .chapter-directory-grid a{width:100%}
+}
