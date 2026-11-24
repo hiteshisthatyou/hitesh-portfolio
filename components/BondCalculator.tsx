@@ -69,7 +69,7 @@ export default function BondCalculator() {
   const [settlement,setSettlement]=useState('2026-11-24');
   const [maturity,setMaturity]=useState('2031-11-24');
 
-  const result=useMemo(()=>{
+  const result=useMemo<any>(()=>{
     const f=Number(face),u=Number(units),c=Number(coupon),p=Number(price),r=Number(redemption);
     if(![f,u,c,p,r].every(Number.isFinite)||f<=0||u<=0||c<0||p<=0||r<=0||!settlement||!maturity) return {error:'Enter valid positive amounts, rates and dates.'} as const;
     const s=dateValue(settlement),m=dateValue(maturity);
