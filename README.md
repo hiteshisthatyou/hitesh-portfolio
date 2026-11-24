@@ -86,3 +86,18 @@ The site includes semantic landmarks, labelled controls, keyboard-operable nativ
 - The intro-film placeholder has been removed until the final recording is supplied.
 - The Visual Journal section and navigation link have been hidden until personal photographs are supplied.
 - Kannada translations have been expanded across the main page labels and explanatory copy. Product/company names, technical terms, and some source profile fields remain in their original form where preserving exact terminology is useful. Review the Kannada version before publishing.
+
+
+## HITESH 5.0 multi-page architecture
+
+The existing portfolio interface is retained and routed into dedicated chapters:
+- / — portfolio introduction and key metrics
+- /about — professional story and approach
+- /experience — career journey
+- /selected-work — filterable, expandable case studies
+- /product-lab — interactive product challenge lab
+- /decision-studio — interactive prioritisation model
+- /visual-journal — photography and lightbox
+- /contact — direct contact details
+
+Shared navigation links connect these routes. All pages reuse the original Portfolio component and original profile data so that existing interactions and content are retained.
