@@ -434,16 +434,9 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}
 main[data-chapter] > .topbar { position: sticky; }
 main[data-chapter="home"] > .hero,
 main[data-chapter="home"] > .home-hero { display: grid; }
-main[data-chapter="home"] > #story,
-main[data-chapter="home"] > #journey,
-main[data-chapter="home"] > #work,
-main[data-chapter="home"] > #product-lab,
-main[data-chapter="home"] > #decision-studio,
-main[data-chapter="home"] > #analytics,
-main[data-chapter="home"] > section.skills-section,
-main[data-chapter="home"] > #recruiter-path,
-main[data-chapter="home"] > section.recruiter,
-main[data-chapter="home"] > #visual-journal { display:none !important; }
+/* The home route is the complete, continuous portfolio. Keep all chapters visible. */
+main[data-chapter="home"] > .hero,
+main[data-chapter="home"] > .home-hero { display: grid; }
 main[data-chapter="home"] > .metrics-band { display:block; }
 main[data-chapter="about"] > .hero,
 main[data-chapter="about"] > .metrics-band,
