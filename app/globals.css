@@ -1524,3 +1524,99 @@ body .case-flow-index,body .case-flow-step:not(:last-child):after,
 body .contact-links a:hover,body .contact-links button:hover,
 body .nav a:hover,body .text-link:hover{color:#d71920!important}
 body ::selection{color:#fff!important;background:#d71920!important}
+
+
+/* FINAL ACCESSIBILITY PASS: enforce readable contrast across every portfolio surface */
+:root{
+ --paper:#ffffff!important;--white:#ffffff!important;--ink:#000000!important;
+ --muted:#000000!important;--muted-2:#000000!important;--line:#bdbdbd!important;
+ --accent:#d71920!important;--soft:#f2f2f2!important;--deep:#000000!important;
+ color-scheme:light;
+}
+html,body,main{background:#ffffff!important;color:#000000!important}
+body{color:#000000!important}
+main .topbar,main .nav,main .nav.open{background:#ffffff!important;border-color:#000000!important}
+main .metrics-band,main .section-tint,main .journal,main .section-ink,main .closing,
+main .lab-output,main .dashboard,main .dash-intro,main .decision-grid,
+main .decision-controls,main .decision-result,main .lens-panel,main .chapter-directory,
+main .case-page,main .case-hero,main .case-section,main .case-tools,main .case-outcomes,
+main .case-next,main .case-flow,main .case-pullquote,main .case-scope,
+main .utility-page,main .utility-shell,main .photo-slot,main .video-placeholder,
+main .project-card,main .video-card,main .instagram-card,main .case-flow-step,
+main .portrait-frame,main .portrait-note,main .consent{
+ background:#ffffff!important;color:#000000!important;
+}
+main .metrics-band,main .section-tint,main .journal,main .lab-output,main .dash-intro,
+main .decision-controls,main .lens-panel,main .case-pullquote,main .case-scope,
+main .photo-slot,main .video-placeholder{background:#f2f2f2!important}
+main .section-ink,main .closing,main .dashboard,main .decision-result{background:#ffffff!important;color:#000000!important}
+main .project-card,main .video-card,main .instagram-card,main .case-flow-step{border:1px solid #bdbdbd!important;box-shadow:none!important;border-radius:0!important}
+main .timeline,main .career-card,main .career-proof,main .case-detail,main .lab-grid,
+main .lab-selector,main .education-row,main .footer,main .case-outcome-list,
+main .case-outcome,main .case-footer{border-color:#bdbdbd!important}
+
+/* Deliberately high-specificity text reset: cancels old muted/washed-out theme layers. */
+main *:not(svg):not(path):not(input):not(textarea):not(select):not(option){
+ color:#000000!important;
+}
+main .eyebrow,main .hero-kicker,main .hero-meta,main .hero-bottom,main .career-top,
+main .career-index,main .project-card-top,main .portrait-note,main .photo-slot span,
+main .photo-slot small,main .footer>span,main .visual-index,main .visual-coordinate,
+main .vision-caption,main .scan-label,main .film-rail,main .film-rail a,
+main .metric small,main .metric-foot,main .story-aside,main .lede,
+main .career-main>p,main .career-proof span,main .detail-list,main .project-card>p,
+main .case-detail p,main .lab-output p,main .dash-intro p,main .sql-example p,
+main .closing-line,main .education-row p,main .education-row small,main .video-card p,
+main .case-deck,main .case-flow-head p,main .case-flow-note,main .case-scope p,
+main .case-outcomes-head p,main .case-section>div:last-child>p,main .caveat,
+main .section-head>p,main .instagram-note,main .chapter-directory a small,
+main .recruiter>div>p:not(.eyebrow),main .decision-controls label{
+ color:#000000!important;opacity:1!important;
+}
+main h1,main h2,main h3,main h4,main h5,main h6,main p,main li,main label,
+main strong,main b,main small,main span,main a,main button,main time,
+main figcaption,main dt,main dd{opacity:1}
+main .wordmark,main .footer-sign,main .hero h1,main .section h2,main .career-main h3,
+main .project-card h3,main .lab-output h3,main .dash-intro h3,main .sql-example h3,
+main .education-row h3,main .closing h2,main .case-page h1,main .case-page h2,
+main .case-page h3,main .case-page strong,main .decision-result h3,
+main .lens-panel h3{color:#000000!important}
+main .nav a,main .top-actions select,main .icon-btn,main .menu-btn,
+main .text-link,main .contact-links a,main .contact-links button,
+main .expand,main .lab-selector button,main .lens-tabs button,
+main .filters button,main .case-next-links a,main .case-footer a{
+ color:#000000!important;opacity:1!important;
+}
+main .live-dot,main .wordmark span,main .footer-sign span,main .hero-edition i,
+main .scroll-progress,main .result-number strong,main .case-outcome>span,
+main .case-flow-index,main .contact-links a:hover,main .contact-links button:hover,
+main .nav a:hover,main .text-link:hover{color:#d71920!important}
+main .live-dot,main .hero-edition i,main .portrait-stamp,main .scroll-progress,
+main .funnel-track div,main .priority-track span{background:#d71920!important}
+main .portrait-stamp{color:#ffffff!important}
+main .button.dark,main .filters button.active,main .tag{
+ background:#000000!important;color:#ffffff!important;border-color:#000000!important;
+}
+main .button.light{background:#d71920!important;color:#ffffff!important;border-color:#d71920!important}
+main .tag{background:#000000!important;color:#ffffff!important}
+main .sql-example pre{background:#000000!important;color:#ffffff!important;border:1px solid #000000!important}
+main .sql-example pre *,main .sql-example code{color:#ffffff!important}
+main .consent{background:#ffffff!important;border:1px solid #000000!important}
+main .consent p,main .consent button{color:#000000!important}
+main .skill-group span,main .role-tags span,main .certs span,main .lens-proof span,
+main .case-tool-list span{background:#f2f2f2!important;color:#000000!important;border:1px solid #bdbdbd!important}
+main .funnel-track,main .priority-track{background:#d9d9d9!important}
+main .result-number span{color:#000000!important}
+main .framework div{border-color:#d71920!important}
+main .framework b{color:#000000!important}
+main .vision-frame,main .vision-crosshair{border-color:#d71920!important}
+main .vision-label{background:#ffffff!important;color:#d71920!important}
+main .portrait-frame img,main .photo-tile img{filter:grayscale(100%) contrast(1.12)!important;opacity:1!important}
+main input,main select,main textarea{color:#000000!important;background:#ffffff!important;border-color:#000000!important}
+main input::placeholder,main textarea::placeholder{color:#555555!important;opacity:1!important}
+main button:focus-visible,main a:focus-visible,main input:focus-visible,
+main select:focus-visible,main textarea:focus-visible{outline:3px solid #d71920!important;outline-offset:3px!important}
+@media(max-width:850px){
+ main .nav,main .nav.open{background:#ffffff!important;border-color:#000000!important}
+ main .nav a{color:#000000!important}
+}
