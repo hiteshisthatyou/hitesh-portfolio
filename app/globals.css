@@ -1268,3 +1268,12 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
  .contact-phone-number{font-size:clamp(44px,11vw,68px)}
 }
 @media(prefers-reduced-motion:reduce){.method-progress i,.method-step-orbit b{animation:none!important}.chapter-card>a,.project-card,.lab-output,.decision-grid>*{transition:none!important}}
+
+
+/* Full-name typewriter pacing and compact metric safeguards */
+.opening-word{font-size:clamp(42px,8vw,112px);letter-spacing:-.07em;white-space:nowrap;max-width:calc(100vw - 36px)}
+.opening-word .name-space{width:.28em}
+.opening-word span{animation-duration:.58s}
+.opening-caption{margin-top:26px}
+.opening-progress{margin-top:38px}
+@media(max-width:520px){.opening-word{font-size:clamp(34px,9.2vw,52px);letter-spacing:-.06em}.opening-caption{letter-spacing:.16em}}
