@@ -2059,3 +2059,14 @@ main .decision-result .priority-track span{background:#3155e7!important}
 .direct-contact-actions a:hover{background:#30313a!important;color:#fff!important;transform:translateY(-3px)}
 .direct-contact-actions svg{width:17px;height:17px}
 @media(max-width:520px){.direct-contact-number{font-size:clamp(40px,10.5vw,58px)}.direct-contact-actions a{min-width:132px}}
+
+
+/* Analytics funnel labels sit inside each bar for instant scanning */
+.funnel-row{grid-template-columns:minmax(0,1fr) 64px;gap:12px}
+.funnel-row>span:first-child{display:none}
+.funnel-track{position:relative;isolation:isolate;overflow:hidden;min-width:0;height:34px;background:#e2e3dc!important}
+.funnel-track>div{position:absolute;inset:0 auto 0 0;height:100%;background:#7ca99d!important;opacity:.78;z-index:-1;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.funnel-bar-label{position:absolute;inset:0;display:flex;align-items:center;padding:0 13px;color:#17201d!important;font-size:12px;font-weight:650;letter-spacing:.01em;z-index:1}
+.funnel-row>b{color:#171923!important;font-variant-numeric:tabular-nums}
+.decision-result>strong.decision-score>span{color:#171923!important;-webkit-text-fill-color:#171923!important;opacity:1!important;visibility:visible!important;text-shadow:none!important}
+.decision-result>strong.decision-score>small{color:#68736d!important;-webkit-text-fill-color:#68736d!important;opacity:1!important;visibility:visible!important}
