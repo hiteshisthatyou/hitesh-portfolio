@@ -1595,3 +1595,22 @@ body{font-family:'DM Sans',sans-serif}
 @media(max-width:620px){.hero h1{font-size:clamp(48px,13vw,72px)!important}.project-card{padding:25px!important}.hero-visual:after{right:12px;top:18px;font-size:25px}.closing:after{right:-10%;top:8%}}
 @media(prefers-reduced-motion:reduce){.hero-visual,.project-card,.photo-tile,.button{transition:none!important;transform:none!important}}
 .motion-off .hero-visual,.motion-off .project-card,.motion-off .photo-tile,.motion-off .button{transition:none!important}
+
+/* Keep the hypothetical product exercise legible on its pale gallery panel. */
+main .lab-output,
+main .lab-output h3,
+main .lab-output h4,
+main .lab-output p,
+main .lab-output strong,
+main .lab-output .framework button,
+main .lab-output .framework button b,
+main .lab-output .framework button span,
+main .lab-output .lab-stage-detail,
+main .lab-output .lab-stage-detail *{
+  color:#29251f!important;
+}
+main .lab-output .framework button{background:transparent!important}
+main .lab-output .framework button:hover,
+main .lab-output .framework button.active-stage{background:#fffdf8!important}
+main .lab-output .lab-stage-detail{background:#fffdf8!important;border-color:#ded7ca!important}
+main .lab-output .lab-stage-detail .eyebrow{color:#3159c9!important}
