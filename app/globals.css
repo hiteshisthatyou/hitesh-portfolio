@@ -1151,3 +1151,54 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
  .section-head>div{padding-right:34px}
 }
 @media(prefers-reduced-motion:reduce){.heading-orbit i{animation:none!important}}
+
+
+/* OPENING TITLE CARD */
+.opening-sequence{position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f5f4ef;color:#171815;pointer-events:auto;animation:opening-enter .45s ease-out both}
+.opening-word{display:flex;align-items:center;min-height:clamp(76px,12vw,150px);font:500 clamp(64px,13vw,156px)/.9 Georgia,serif;letter-spacing:-.075em}
+.opening-word span{display:inline-block;animation:type-letter .42s cubic-bezier(.16,1,.3,1) both}
+.opening-word span:nth-child(2){animation-delay:.035s}.opening-word span:nth-child(3){animation-delay:.07s}.opening-word span:nth-child(4){animation-delay:.105s}.opening-word span:nth-child(5){animation-delay:.14s}.opening-word span:nth-child(6){animation-delay:.175s}
+.type-caret{display:block;width:2px;height:.72em;background:#27845f;margin-left:12px;animation:caret-blink .8s steps(2,start) infinite}
+.opening-caption{margin-top:22px;font:10px 'DM Mono',monospace;letter-spacing:.24em;color:#777970}
+.opening-progress{width:clamp(120px,18vw,220px);height:1px;background:rgba(23,24,21,.12);margin-top:34px;overflow:hidden}
+.opening-progress i{display:block;width:100%;height:100%;background:#27845f;transform:scaleX(0);transform-origin:left;transition:transform .18s linear}
+.opening-sequence-leave{animation:opening-exit .85s cubic-bezier(.76,0,.24,1) forwards}
+@keyframes type-letter{from{opacity:0;transform:translateY(24px);filter:blur(7px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes caret-blink{to{opacity:0}}
+@keyframes opening-enter{from{opacity:0}to{opacity:1}}
+@keyframes opening-exit{to{opacity:0;visibility:hidden;transform:translateY(-2.5%);pointer-events:none}}
+/* Career story: keep the chapter thesis pinned beside the entire card sequence */
+.timeline{display:grid!important;grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr)!important;column-gap:clamp(34px,6vw,100px);row-gap:0;align-items:start}
+.timeline-intro{grid-column:1;grid-row:1 / span 20;position:sticky;top:clamp(112px,17vh,180px);align-self:start;display:flex!important;flex-direction:column;align-items:flex-start!important;justify-content:center;min-height:62vh;padding:0 0 8vh!important;gap:24px}
+.timeline-intro>span{font:10px 'DM Mono',monospace;letter-spacing:.17em;color:#777970}
+.timeline-intro strong{display:block!important;width:100%;max-width:470px;font:500 clamp(42px,5.2vw,72px)/.99 Georgia,serif!important;letter-spacing:-.06em!important;overflow-wrap:normal;text-wrap:balance}
+.timeline-intro p{max-width:340px!important;justify-self:auto!important;line-height:1.8}
+.career-card{grid-column:2;grid-row:auto;display:grid!important;grid-template-columns:34px minmax(0,1fr) minmax(170px,.62fr)!important;align-items:center!important;width:100%;min-width:0;min-height:clamp(420px,58vh,610px)!important;margin:0 0:0!important;margin-bottom:34vh!important;padding:clamp(26px,3.5vw,54px)!important;gap:clamp(18px,2.8vw,40px)!important}
+.career-card:last-child{margin-bottom:10vh!important}
+.career-main{grid-column:2;min-width:0;width:100%}
+.career-index{grid-column:1;grid-row:1;align-self:start}
+.career-proof{grid-column:3;grid-row:1;align-self:stretch;display:flex;flex-direction:column;justify-content:center;min-width:0;width:100%;border-left:1px solid var(--line);padding-left:clamp(20px,3vw,42px)!important;overflow:visible}
+.career-proof strong{display:block;width:100%;max-width:100%;font:500 clamp(42px,5.3vw,76px)/1.04 Georgia,serif!important;letter-spacing:-.065em!important;white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;text-wrap:balance}
+.career-proof span{max-width:190px!important;line-height:1.65;margin-top:18px!important}
+.career-top{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:12px 18px!important}
+.career-top span{min-width:0;line-height:1.5;overflow-wrap:anywhere}
+.career-top span:last-child{text-align:right}
+.career-main h3{font-size:clamp(36px,4.6vw,68px)!important;line-height:1!important;overflow-wrap:anywhere}
+@media(max-width:900px){
+ .timeline{grid-template-columns:minmax(190px,.62fr) minmax(0,1.38fr)!important;column-gap:24px}
+ .timeline-intro strong{font-size:clamp(36px,5.5vw,54px)!important}
+ .career-card{grid-template-columns:24px minmax(0,1fr)!important;min-height:0!important;padding:28px 22px!important;gap:14px!important;margin-bottom:26vh!important}
+ .career-main{grid-column:2;grid-row:1}
+ .career-proof{grid-column:2;grid-row:2;border-left:0;border-top:1px solid var(--line);padding:18px 0 0!important}
+ .career-proof strong{font-size:clamp(42px,6vw,60px)!important}
+}
+@media(max-width:650px){
+ .timeline{display:flex!important;flex-direction:column;gap:30px}
+ .timeline-intro{position:relative;top:auto;min-height:0;padding:0 0 24px!important;gap:14px}
+ .timeline-intro strong{max-width:520px;font-size:clamp(40px,11vw,58px)!important}
+ .career-card{width:100%;margin-bottom:20vh!important;grid-template-columns:22px minmax(0,1fr)!important}
+ .career-main h3{font-size:clamp(34px,9vw,52px)!important}
+ .career-proof strong{font-size:54px!important}
+ .opening-caption{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.opening-word span,.type-caret{animation:none!important}.opening-sequence-leave{animation-duration:.01ms}}
