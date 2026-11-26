@@ -971,7 +971,7 @@ html,body{background:#f5f4ef!important;color:#171815!important;color-scheme:ligh
 .world-backdrop{background:radial-gradient(ellipse at 74% 38%,#fffefa 0%,#eeede7 44%,#e6e5df 100%)!important}
 .world-canvas{opacity:.58!important;mix-blend-mode:multiply}
 .world-canvas-still{opacity:.32!important}
-.world-vignette{background:linear-gradient(90deg,rgba(245,244,239,.98) 0%,rgba(245,244,239,.82) 40%,rgba(245,244,239,.18) 100%),linear-gradient(0deg,rgba(245,244,239,.94),transparent 44%,rgba(245,244,239,.25)!important)}
+.world-vignette{background:linear-gradient(90deg,rgba(245,244,239,.98) 0%,rgba(245,244,239,.82) 40%,rgba(245,244,239,.18) 100%),linear-gradient(0deg,rgba(245,244,239,.94),transparent 44%,rgba(245,244,239,.25))!important}
 .topbar{background:rgba(248,247,242,.82)!important;border-bottom:1px solid rgba(25,26,22,.1)!important;color:#171815!important}
 .wordmark,.footer-sign{color:#171815!important}.wordmark span,.footer-sign span{color:#27845f!important}
 .nav a,.top-actions select,.icon-btn,.menu-btn{color:#4d5049!important}
