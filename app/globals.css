@@ -1547,3 +1547,43 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
     font-size:clamp(42px,4.4vw,54px)!important;
   }
 }
+
+
+/* Desktop only: let the career cards use the full timeline width.
+   The split sticky timeline was constraining the cards to a narrow column. */
+@media(min-width:901px){
+  .timeline{
+    display:block!important;
+    width:100%!important;
+  }
+  .timeline-intro{
+    display:grid!important;
+    grid-template-columns:minmax(180px,.75fr) minmax(250px,1.1fr) minmax(180px,.75fr)!important;
+    align-items:end!important;
+    position:relative!important;
+    top:auto!important;
+    min-height:0!important;
+  }
+  .career-card{
+    display:grid!important;
+    grid-column:auto!important;
+    grid-template-columns:70px minmax(0,1fr) minmax(300px,370px)!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:390px!important;
+    margin:0 0 42px!important;
+    padding:clamp(28px,4vw,58px)!important;
+    gap:clamp(18px,3vw,42px)!important;
+    position:relative!important;
+    top:auto!important;
+    overflow:visible!important;
+  }
+  .career-card .career-main,
+  .career-card .career-proof{min-width:0!important}
+}
+@media(min-width:901px) and (max-width:1100px){
+  .career-card{
+    grid-template-columns:48px minmax(0,1fr) minmax(250px,300px)!important;
+    gap:20px!important;
+  }
+}
