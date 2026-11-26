@@ -1614,3 +1614,21 @@ main .lab-output .framework button:hover,
 main .lab-output .framework button.active-stage{background:#fffdf8!important}
 main .lab-output .lab-stage-detail{background:#fffdf8!important;border-color:#ded7ca!important}
 main .lab-output .lab-stage-detail .eyebrow{color:#3159c9!important}
+
+
+/* Site-wide contrast floor: accent text on pale surfaces remains dark enough to read. */
+html body main :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time,dt,dd,th,td):not(#contrast-exempt){
+  color:#29251f!important;
+}
+
+/* Reverse the contrast only inside intentionally dark surfaces and controls. */
+html body main :is(.section-ink,.closing,.decision-result,.sql-example pre,.bond-result-panel,.calc-hero-saving,.photo-lightbox,.portrait-caption,.photo-open,.button.dark,.filters button.active,.lens-tabs button.active,.ideas-button,.film-rail a:hover,.film-rail a:focus-visible):not(#contrast-exempt){
+  color:#fffdf8!important;
+}
+html body main :is(.section-ink,.closing,.decision-result,.sql-example pre,.bond-result-panel,.calc-hero-saving,.photo-lightbox,.portrait-caption,.photo-open,.button.dark,.filters button.active,.lens-tabs button.active,.ideas-button,.film-rail a:hover,.film-rail a:focus-visible) :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time,dt,dd,th,td):not(#contrast-exempt){
+  color:#fffdf8!important;
+}
+html body main .section-ink .dash-intro,
+html body main .section-ink .dash-intro :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time,dt,dd,th,td):not(#contrast-exempt){
+  color:#29251f!important;
+}
