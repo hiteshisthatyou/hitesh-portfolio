@@ -1452,178 +1452,64 @@ body{font-family:'DM Sans',Arial,sans-serif!important}
 @media(prefers-reduced-motion:reduce){.hero-copy>*,.portrait-wrap,.portrait-frame img,.hero-bottom span:first-child,.metric{animation:none!important}.project-card,.career-card,.button.dark{transition:none!important}}
 
 
-/* STRICT MONOCHROME / NO SOFT COLOURS */
-:root{--paper:#ffffff!important;--white:#ffffff!important;--ink:#000000!important;--muted:#666666!important;--line:#bdbdbd!important;--accent:#d71920!important;--soft:#f2f2f2!important;--deep:#000000!important;color-scheme:light}
-html,body,main,.hero,.section,.case-page,.case-hero,.case-section,.case-tools,.case-outcomes,.case-next,.case-flow,.utility-page,.utility-shell{background:#fff!important;color:#000!important}
-.topbar{background:rgba(255,255,255,.97)!important;border-color:#bdbdbd!important}
-.nav,.nav.open{background:#fff!important}
-.nav a,.top-actions select,.icon-btn,.menu-btn,.text-link,.contact-links a,.contact-links button{color:#000!important}
-.wordmark,.footer-sign,.hero h1,.section h2,.career-main h3,.project-card h3,.lab-output h3,.dash-intro h3,.sql-example h3,.education-row h3,.closing h2,.case-hero h1,.case-section h2,.case-flow-head h2{color:#000!important}
-.eyebrow,.hero-kicker,.hero-meta,.hero-bottom,.career-top,.project-card-top,.portrait-note,.photo-slot span,.footer>span,.visual-index,.visual-coordinate,.vision-caption,.scan-label,.film-rail{color:#666!important}
-.live-dot,.wordmark span,.footer-sign span,.hero-edition i,.portrait-stamp,.scroll-progress,.framework div,.funnel-track div{background:#d71920!important}
-.hero-edition i{background:#d71920!important}
-.portrait-frame,.photo-slot,.video-placeholder{background:#fff!important;border:1px solid #000!important}
-.portrait-frame img{filter:grayscale(100%) contrast(1.15)!important;opacity:1!important}
-.portrait-note{background:#fff!important;border:1px solid #000!important}
-.portrait-stamp{background:#d71920!important;color:#fff!important}
-.metrics-band,.section-tint,.journal,.section-ink,.closing,.lab-output,.dashboard,.dash-intro,.photo-slot,.video-placeholder,.case-pullquote,.case-scope{background:#f2f2f2!important;color:#000!important}
-.metric strong,.metric span,.career-proof strong,.career-main h3,.project-card h3,.case-detail b,.lab-selector button.selected,.dash-intro label,.result-number span,.video-card h3{color:#000!important}
-.metric small,.metric-foot,.story-aside,.lede,.career-main>p,.detail-list,.project-card>p,.case-detail p,.lab-output p,.dash-intro p,.sql-example p,.closing-line,.education-row p:not(.eyebrow),.education-row small,.photo-slot small,.video-card p,.case-deck,.case-flow-head p,.case-flow-note,.case-scope p,.case-outcomes-head p,.case-section>div:last-child>p{color:#555!important}
-.timeline,.career-card,.career-proof,.case-detail,.lab-grid,.lab-selector,.education-row,.footer,.case-outcome-list,.case-outcome,.case-footer{border-color:#bdbdbd!important}
-.career-index,.career-top,.caveat{color:#666!important}
-.filters button{background:#fff!important;color:#000!important;border:1px solid #000!important;border-radius:0!important}
-.filters button.active{background:#000!important;color:#fff!important;border-color:#000!important}
-.project-card,.video-card,.instagram-card,.instagram-card .instagram-media,.case-flow-step{background:#fff!important;border:1px solid #000!important;border-radius:0!important;box-shadow:none!important}
-.lab-grid{border:1px solid #000!important}.lab-selector button{color:#333!important;border-color:#bdbdbd!important}
-.tag{background:#000!important;color:#fff!important}
-.framework div{border-color:#d71920!important}.framework b{color:#666!important}
-.result-number strong,.case-outcome>span,.case-flow-index,.case-flow-step:not(:last-child):after{color:#d71920!important}
-.dash-intro input{accent-color:#d71920!important}
-.funnel-track{background:#ddd!important}
-.sql-example pre{background:#000!important;color:#fff!important}
-.skill-group{border-color:#000!important}.skill-group h3{color:#000!important}
-.skill-group span,.role-tags span,.certs span{background:#fff!important;color:#000!important;border:1px solid #bdbdbd!important;border-radius:0!important}
-.button.dark{background:#000!important;color:#fff!important;border:1px solid #000!important;border-radius:0!important}
-.button.light{background:#d71920!important;color:#fff!important;border:1px solid #d71920!important;border-radius:0!important}
-.expand,.top-actions select,.icon-btn,.menu-btn,.consent button{border-radius:0!important}
-.expand{color:#000!important;border-color:#000!important}
-.vision-frame,.vision-crosshair{border-color:#d71920!important}.vision-label{background:#fff!important;color:#d71920!important}
-.case-pullquote{border-color:#d71920!important;color:#000!important}
-.case-tool-list span{background:#fff!important;border-color:#000!important;color:#000!important}
-.case-outcome strong,.case-flow-step strong{color:#000!important}
-.case-flow-step small,.case-footer{color:#555!important}
-.consent{background:#fff!important;border:1px solid #000!important;box-shadow:0 12px 30px rgba(0,0,0,.12)!important}
-.consent p{color:#000!important}.consent button{background:#fff!important;color:#000!important;border:1px solid #000!important}
-@media(max-width:850px){.nav{background:#fff!important;border-color:#000!important}.nav a{color:#000!important}}
 
-
-/* TYPOGRAPHY: SHARP, HIGH-CONTRAST INK ONLY */
-:root{--muted:#000!important;--muted-2:#000!important}
-body,body p,body small,body label,body li,body dt,body dd,
-body .eyebrow,body .hero-kicker,body .hero-meta,body .hero-bottom,
-body .career-top,body .career-index,body .project-card-top,
-body .portrait-note,body .photo-slot span,body .photo-slot small,
-body .footer>span,body .visual-index,body .visual-coordinate,
-body .vision-caption,body .scan-label,body .film-rail,
-body .metric span,body .metric small,body .metric-foot,
-body .story-aside,body .lede,body .career-main>p,body .detail-list,
-body .project-card>p,body .case-detail p,body .lab-output p,
-body .dash-intro p,body .sql-example p,body .closing-line,
-body .education-row p,body .education-row small,body .video-card p,
-body .case-deck,body .case-flow-head p,body .case-flow-note,
-body .case-scope p,body .case-outcomes-head p,
-body .case-section>div:last-child>p,body .caveat,
-body .lab-selector button,body .film-rail a,body .nav a,
-body .top-actions select,body .icon-btn,body .menu-btn,
-body .consent p{color:#000!important}
-body .button.dark,body .filters button.active,body .tag,
-body .sql-example pre,body .consent button{color:#fff!important}
-body .button.light,body .wordmark span,body .footer-sign span,
-body .result-number strong,body .case-outcome>span,
-body .case-flow-index,body .case-flow-step:not(:last-child):after,
-body .contact-links a:hover,body .contact-links button:hover,
-body .nav a:hover,body .text-link:hover{color:#d71920!important}
-body ::selection{color:#fff!important;background:#d71920!important}
-
-
-/* FINAL ACCESSIBILITY PASS: enforce readable contrast across every portfolio surface */
-:root{
- --paper:#ffffff!important;--white:#ffffff!important;--ink:#000000!important;
- --muted:#000000!important;--muted-2:#000000!important;--line:#bdbdbd!important;
- --accent:#d71920!important;--soft:#f2f2f2!important;--deep:#000000!important;
- color-scheme:light;
-}
-html,body,main{background:#ffffff!important;color:#000000!important}
-body{color:#000000!important}
-main .topbar,main .nav,main .nav.open{background:#ffffff!important;border-color:#000000!important}
-main .metrics-band,main .section-tint,main .journal,main .section-ink,main .closing,
-main .lab-output,main .dashboard,main .dash-intro,main .decision-grid,
-main .decision-controls,main .decision-result,main .lens-panel,main .chapter-directory,
-main .case-page,main .case-hero,main .case-section,main .case-tools,main .case-outcomes,
-main .case-next,main .case-flow,main .case-pullquote,main .case-scope,
-main .utility-page,main .utility-shell,main .photo-slot,main .video-placeholder,
-main .project-card,main .video-card,main .instagram-card,main .case-flow-step,
-main .portrait-frame,main .portrait-note,main .consent{
- background:#ffffff!important;color:#000000!important;
-}
-main .metrics-band,main .section-tint,main .journal,main .lab-output,main .dash-intro,
-main .decision-controls,main .lens-panel,main .case-pullquote,main .case-scope,
-main .photo-slot,main .video-placeholder{background:#f2f2f2!important}
-main .section-ink,main .closing,main .dashboard,main .decision-result{background:#ffffff!important;color:#000000!important}
-main .project-card,main .video-card,main .instagram-card,main .case-flow-step{border:1px solid #bdbdbd!important;box-shadow:none!important;border-radius:0!important}
-main .timeline,main .career-card,main .career-proof,main .case-detail,main .lab-grid,
-main .lab-selector,main .education-row,main .footer,main .case-outcome-list,
-main .case-outcome,main .case-footer{border-color:#bdbdbd!important}
-
-/* Deliberately high-specificity text reset: cancels old muted/washed-out theme layers. */
-main *:not(svg):not(path):not(input):not(textarea):not(select):not(option):not(button):not(button *):not(pre):not(pre *):not(.tag):not(.tag *):not(.portrait-stamp):not(.portrait-stamp *){
- color:#000000!important;
-}
-main .eyebrow,main .hero-kicker,main .hero-meta,main .hero-bottom,main .career-top,
-main .career-index,main .project-card-top,main .portrait-note,main .photo-slot span,
-main .photo-slot small,main .footer>span,main .visual-index,main .visual-coordinate,
-main .vision-caption,main .scan-label,main .film-rail,main .film-rail a,
-main .metric small,main .metric-foot,main .story-aside,main .lede,
-main .career-main>p,main .career-proof span,main .detail-list,main .project-card>p,
-main .case-detail p,main .lab-output p,main .dash-intro p,main .sql-example p,
-main .closing-line,main .education-row p,main .education-row small,main .video-card p,
-main .case-deck,main .case-flow-head p,main .case-flow-note,main .case-scope p,
-main .case-outcomes-head p,main .case-section>div:last-child>p,main .caveat,
-main .section-head>p,main .instagram-note,main .chapter-directory a small,
-main .recruiter>div>p:not(.eyebrow),main .decision-controls label{
- color:#000000!important;opacity:1!important;
-}
-main h1,main h2,main h3,main h4,main h5,main h6,main p,main li,main label,
-main strong,main b,main small,main span,main a,main button,main time,
-main figcaption,main dt,main dd{opacity:1}
-main .wordmark,main .footer-sign,main .hero h1,main .section h2,main .career-main h3,
-main .project-card h3,main .lab-output h3,main .dash-intro h3,main .sql-example h3,
-main .education-row h3,main .closing h2,main .case-page h1,main .case-page h2,
-main .case-page h3,main .case-page strong,main .decision-result h3,
-main .lens-panel h3{color:#000000!important}
-main .nav a,main .top-actions select,main .icon-btn,main .menu-btn,
-main .text-link,main .contact-links a,main .contact-links button,
-main .expand,main .lab-selector button,main .lens-tabs button,
-main .filters button,main .case-next-links a,main .case-footer a{
- color:#000000!important;opacity:1!important;
-}
-main .live-dot,main .wordmark span,main .footer-sign span,main .hero-edition i,
-main .scroll-progress,main .result-number strong,main .case-outcome>span,
-main .case-flow-index,main .contact-links a:hover,main .contact-links button:hover,
-main .nav a:hover,main .text-link:hover{color:#d71920!important}
-main .live-dot,main .hero-edition i,main .portrait-stamp,main .scroll-progress,
-main .funnel-track div,main .priority-track span{background:#d71920!important}
-main .portrait-stamp{color:#ffffff!important}
-main .button.dark,main .filters button.active,main .tag{
- background:#000000!important;color:#ffffff!important;border-color:#000000!important;
-}
+/* =========================================================
+   HITESH PORTFOLIO · CONSOLIDATED CONTRAST SYSTEM
+   One palette, one set of surface rules, no global text reset.
+   ========================================================= */
+:root{--paper:#ffffff;--white:#ffffff;--ink:#000000;--muted:#222222;--muted-2:#333333;--line:#bdbdbd;--accent:#d71920;--soft:#f2f2f2;--deep:#000000;color-scheme:light}
+html,body{background:#ffffff;color:#000000}
+body,main{color:#000000}
+main *{opacity:1}
+main a{color:inherit}
+main .topbar,main .nav,main .nav.open{background:#ffffff!important;color:#000000!important;border-color:#000000!important}
+main .wordmark,main .footer-sign,main .hero h1,main .section h2,main .career-main h3,main .project-card h3,main .lab-output h3,main .dash-intro h3,main .sql-example h3,main .education-row h3,main .case-page h1,main .case-page h2,main .case-page h3,main .decision-result h3,main .lens-panel h3{color:#000000!important}
+main .nav a,main .top-actions select,main .icon-btn,main .menu-btn,main .text-link,main .expand,main .lab-selector button,main .lens-tabs button,main .filters button,main .contact-links a,main .contact-links button,main .case-next-links a,main .case-footer a{color:#000000!important}
+main .eyebrow,main .hero-kicker,main .hero-meta,main .hero-bottom,main .career-top,main .career-index,main .project-card-top,main .portrait-note,main .photo-slot span,main .photo-slot small,main .footer>span,main .visual-index,main .visual-coordinate,main .vision-caption,main .scan-label,main .film-rail,main .metric small,main .metric-foot,main .story-aside,main .lede,main .career-main>p,main .career-proof span,main .detail-list,main .project-card>p,main .case-detail p,main .lab-output p,main .dash-intro p,main .sql-example p,main .education-row p,main .education-row small,main .video-card p,main .case-deck,main .case-flow-head p,main .case-flow-note,main .case-scope p,main .case-outcomes-head p,main .case-section>div:last-child>p,main .caveat,main .section-head>p,main .instagram-note,main .chapter-directory a small,main .recruiter>div>p:not(.eyebrow),main .decision-controls label{color:#111111!important}
+main .metrics-band,main .section-tint,main .journal,main .lab-output,main .dash-intro,main .decision-controls,main .lens-panel,main .case-pullquote,main .case-scope,main .photo-slot,main .video-placeholder{background:#f2f2f2!important;color:#000000!important}
+main .project-card,main .video-card,main .instagram-card,main .case-flow-step,main .decision-grid,main .lab-grid,main .dashboard,main .consent,main .portrait-frame,main .portrait-note,main .chapter-directory{background:#ffffff!important;color:#000000!important}
+main .project-card,main .video-card,main .instagram-card,main .case-flow-step,main .decision-grid,main .dashboard,main .lab-grid,main .career-card,main .career-proof,main .case-detail,main .skill-group,main .education-row,main .case-outcome,main .case-outcome-list{border-color:#bdbdbd!important;box-shadow:none}
+main .section-ink,main .closing{background:#000000!important;color:#ffffff!important}
+main .section-ink h1,main .section-ink h2,main .section-ink h3,main .section-ink h4,main .section-ink p,main .section-ink li,main .section-ink label,main .section-ink span,main .section-ink small,main .section-ink strong,main .section-ink b,main .section-ink .eyebrow,main .section-ink .section-head>p{color:#ffffff!important}
+main .section-ink .dashboard{background:#f2f2f2!important;color:#000000!important;border:1px solid #bdbdbd!important}
+main .section-ink .dash-intro,main .section-ink .dash-intro *{color:#000000!important}
+main .section-ink .funnel,main .section-ink .funnel *{color:#000000!important}
+main .section-ink .sql-example h3,main .section-ink .sql-example p{color:#ffffff!important}
+main .section-ink .sql-example pre,main .section-ink .sql-example pre *{background:#000000!important;color:#ffffff!important;border-color:#333333!important}
+main .section-ink .tag{background:#000000!important;color:#ffffff!important;border:1px solid #ffffff!important}
+main .section-ink .result-number{border-color:#777777!important}
+main .section-ink .result-number strong{color:#d71920!important}
+main .section-ink .result-number span{color:#000000!important}
+main .section-ink .funnel-track{background:#d9d9d9!important}
+main .section-ink .funnel-track div{background:#d71920!important}
+main .closing,main .closing *{color:#ffffff!important}
+main .closing .eyebrow,main .closing .closing-line,main .closing .contact-links a,main .closing .contact-links button{color:#ffffff!important}
+main .closing .button.light{background:#d71920!important;color:#ffffff!important;border-color:#d71920!important}
+main .closing .closing-kicker-dot{background:#d71920!important}
+main .decision-result{background:#f2f2f2!important;color:#000000!important;border:1px solid #bdbdbd!important}
+main .decision-result *{color:#000000!important}
+main .decision-result .tag{background:#000000!important;color:#ffffff!important}
+main .decision-result .priority-track{background:#d9d9d9!important}
+main .decision-result .priority-track span{background:#d71920!important}
+main .button.dark,main .filters button.active,main .tag{background:#000000!important;color:#ffffff!important;border-color:#000000!important}
 main .button.light{background:#d71920!important;color:#ffffff!important;border-color:#d71920!important}
-main .tag{background:#000000!important;color:#ffffff!important}
-main .sql-example pre{background:#000000!important;color:#ffffff!important;border:1px solid #000000!important}
-main .sql-example pre *,main .sql-example code{color:#ffffff!important}
-main .consent{background:#ffffff!important;border:1px solid #000000!important}
-main .consent p,main .consent button{color:#000000!important}
-main .skill-group span,main .role-tags span,main .certs span,main .lens-proof span,
-main .case-tool-list span{background:#f2f2f2!important;color:#000000!important;border:1px solid #bdbdbd!important}
-main .funnel-track,main .priority-track{background:#d9d9d9!important}
-main .result-number span{color:#000000!important}
-main .framework div{border-color:#d71920!important}
-main .framework b{color:#000000!important}
+main .portrait-stamp{background:#d71920!important;color:#ffffff!important}
+main .wordmark span,main .footer-sign span,main .live-dot,main .hero-edition i,main .result-number strong,main .case-outcome>span,main .case-flow-index{color:#d71920!important}
+main .live-dot,main .hero-edition i,main .scroll-progress,main .funnel-track div,main .priority-track span{background:#d71920!important}
+main .skill-group span,main .role-tags span,main .certs span,main .lens-proof span,main .case-tool-list span{background:#f2f2f2!important;color:#000000!important;border:1px solid #bdbdbd!important}
+main .sql-example pre{background:#000000!important;color:#ffffff!important}
+main .sql-example pre *{color:#ffffff!important}
 main .vision-frame,main .vision-crosshair{border-color:#d71920!important}
 main .vision-label{background:#ffffff!important;color:#d71920!important}
 main .portrait-frame img,main .photo-tile img{filter:grayscale(100%) contrast(1.12)!important;opacity:1!important}
 main input,main select,main textarea{color:#000000!important;background:#ffffff!important;border-color:#000000!important}
-main input::placeholder,main textarea::placeholder{color:#555555!important;opacity:1!important}
-main button:focus-visible,main a:focus-visible,main input:focus-visible,
-main select:focus-visible,main textarea:focus-visible{outline:3px solid #d71920!important;outline-offset:3px!important}
-@media(max-width:850px){
- main .nav,main .nav.open{background:#ffffff!important;border-color:#000000!important}
- main .nav a{color:#000000!important}
-}
-
-/* Keep accent labels and controls readable against their own surfaces */
-main .tag{background:#f2f2f2!important;color:#000000!important;border:1px solid #000000!important}
-main .portrait-stamp{background:#d71920!important;color:#ffffff!important}
-main .button.dark,main .filters button.active{background:#000000!important;color:#ffffff!important}
-main .button.light{background:#d71920!important;color:#ffffff!important}
-main .sql-example pre,main .sql-example pre *{background:#000000!important;color:#ffffff!important}
+main input::placeholder,main textarea::placeholder{color:#333333!important;opacity:1!important}
+main button:focus-visible,main a:focus-visible,main input:focus-visible,main select:focus-visible,main textarea:focus-visible{outline:3px solid #d71920!important;outline-offset:3px!important}
+main .consent{background:#ffffff!important;color:#000000!important;border:1px solid #000000!important}
+main .consent p,main .consent button{color:#000000!important}
+main .case-page,main .case-page *{color:#000000}
+main .case-page h1,main .case-page h2,main .case-page h3,main .case-page strong{color:#000000!important}
+main .case-page .case-topbar{background:#ffffff!important;color:#000000!important}
+main .case-page .case-pullquote,main .case-page .case-scope{background:#f2f2f2!important}
+main .case-page .case-outcome>span,main .case-page .case-flow-index{color:#d71920!important}
+@media(max-width:850px){main .nav,main .nav.open{background:#ffffff!important;border-color:#000000!important}main .nav a{color:#000000!important}}
