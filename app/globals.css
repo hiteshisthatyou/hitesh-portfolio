@@ -1979,3 +1979,116 @@ html body main .sql-example pre,
 html body main .sql-example pre *{
   background:#172b25!important;color:#f7fff3!important;
 }
+
+
+/* Hyperbloom component contracts.
+   ID-scoped selectors intentionally outrank legacy theme rules above.
+   Light surface = botanical ink; dark surface = warm white. */
+#analytics .dashboard .dash-intro,
+#analytics .dashboard .dash-intro *{
+  color:#20372c!important;
+}
+#analytics .dashboard .dash-intro{
+  background:#f1f4f8!important;
+  border:1px solid #d7e0e9!important;
+}
+#analytics .dashboard .dash-intro .tag,
+#analytics .sql-example>div>.tag,
+#decision-studio .decision-result>.tag{
+  display:inline-flex!important;
+  background:#e9e8ff!important;
+  color:#343b86!important;
+  border:1px solid #b9b7ed!important;
+}
+#analytics .dashboard .dash-intro h3{color:#20372c!important}
+#analytics .dashboard .dash-intro p,
+#analytics .dashboard .dash-intro label,
+#analytics .dashboard .dash-intro label strong,
+#analytics .dashboard .dash-intro .result-number span{
+  color:#40584a!important;
+}
+#analytics .dashboard .dash-intro .result-number strong{
+  color:#20372c!important;
+}
+#analytics .dashboard .dash-intro input[type="range"]{
+  accent-color:#d96f60!important;
+}
+#analytics .dashboard .funnel,
+#analytics .dashboard .funnel *{
+  color:#f7fff3!important;
+}
+#analytics .dashboard .funnel .caveat{color:#d9e9dc!important}
+#analytics .sql-example>div,
+#analytics .sql-example>div h3,
+#analytics .sql-example>div p{
+  color:#20372c!important;
+}
+#analytics .sql-example pre,
+#analytics .sql-example pre code{
+  background:#172b25!important;
+  color:#f7fff3!important;
+}
+#decision-studio .decision-controls,
+#decision-studio .decision-controls *{
+  color:#20372c!important;
+}
+#decision-studio .decision-result{
+  background:#172b25!important;
+  color:#f7fff3!important;
+}
+#decision-studio .decision-result .decision-score,
+#decision-studio .decision-result .decision-score span,
+#decision-studio .decision-result h3,
+#decision-studio .decision-result p{
+  color:#f7fff3!important;
+}
+#decision-studio .decision-result .decision-score small{color:#d0d9d0!important}
+#decision-studio .decision-result .priority-track{background:#526b5e!important}
+#decision-studio .decision-result .priority-track span{background:#d8f36b!important}
+#contact .closing-content>a.button.light,
+#contact .closing-content>a.button.light *,
+#contact a.button.light,
+#contact a.button.light *{
+  background:#d8f36b!important;
+  color:#20372c!important;
+  border-color:#d8f36b!important;
+}
+#contact .closing-line,
+#contact .contact-links a,
+#contact .contact-links button,
+#contact .eyebrow,
+#contact .closing-content h2{
+  color:#fffdf8!important;
+}
+/* Case-study pages: assign foregrounds to each light component, not inherited global defaults. */
+main.case-page{background:#f5f8ef!important;color:#20372c!important}
+main.case-page .case-topbar,
+main.case-page .case-breadcrumb,
+main.case-page .case-section,
+main.case-page .case-flow,
+main.case-page .case-tools,
+main.case-page .case-outcomes,
+main.case-page .case-next,
+main.case-page .case-footer{color:#20372c!important}
+main.case-page .case-hero{
+  background:linear-gradient(120deg,#e7f2e4 0%,#eeeeff 68%,#ffe9e0 100%)!important;
+}
+main.case-page .case-hero :is(h1,p,span){color:#20372c!important}
+main.case-page .case-section :is(h2,p,small,span){color:#20372c!important}
+main.case-page .case-flow-head :is(h2,p,span){color:#20372c!important}
+main.case-page .case-flow-step{
+  background:#eaf2e7!important;border-color:#cfdfd0!important;
+}
+main.case-page .case-flow-step :is(strong,small,span){color:#20372c!important}
+main.case-page .case-tools :is(h2,span){color:#20372c!important}
+main.case-page .case-tool-list span{
+  background:#e7f2e4!important;border:1px solid #c9dfcb!important;color:#244d3b!important;
+}
+main.case-page .case-outcomes :is(h2,p,span,strong){color:#20372c!important}
+main.case-page .case-outcome strong{color:#20372c!important}
+main.case-page .case-scope{background:#eaf2e7!important;border-color:#cfdfd0!important}
+main.case-page .case-scope :is(span,p){color:#20372c!important}
+main.case-page .case-pullquote{background:#e9e8ff!important;color:#263b52!important;border-color:#7778e8!important}
+main.case-page .case-next-links a,
+main.case-page .case-footer a{color:#315f4b!important;border-color:#cbdacb!important}
+main.case-page .case-footer span{color:#526b5b!important}
