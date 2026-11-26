@@ -19,16 +19,16 @@ function Core() {
     <group ref={group} position={[1.45, 0.05, 0]}>
       <mesh ref={shell}>
         <icosahedronGeometry args={[1.12, 2]} />
-        <MeshDistortMaterial color="#a5f3dc" roughness={0.12} metalness={0.78} distort={0.22} speed={1.1} radius={1} transparent opacity={0.82} />
+        <MeshDistortMaterial color="#d6d7d0" roughness={0.12} metalness={0.78} distort={0.22} speed={1.1} radius={1} transparent opacity={0.82} />
       </mesh>
       <mesh scale={1.28}>
         <icosahedronGeometry args={[1.12, 1]} />
-        <meshBasicMaterial color="#b7ffe8" wireframe transparent opacity={0.17} />
+        <meshBasicMaterial color="#72756e" wireframe transparent opacity={0.17} />
       </mesh>
       {[1.65, 2.05, 2.48].map((radius, i) => (
         <mesh key={radius} rotation={[0.45 + i * 0.62, 0.2 + i * 0.7, i * 0.42]}>
           <torusGeometry args={[radius, i === 1 ? 0.009 : 0.015, 12, 180]} />
-          <meshBasicMaterial color={i === 1 ? '#d9fff5' : '#72b9ac'} transparent opacity={i === 1 ? 0.72 : 0.38} />
+          <meshBasicMaterial color={i === 1 ? '#777b73' : '#b5b7ae'} transparent opacity={i === 1 ? 0.72 : 0.38} />
         </mesh>
       ))}
       {[0, 1, 2, 3, 4, 5].map((i) => {
@@ -37,7 +37,7 @@ function Core() {
           <Float key={i} speed={1.1 + i * 0.12} rotationIntensity={0.7} floatIntensity={0.8}>
             <mesh position={[Math.cos(a) * 2.15, Math.sin(a * 1.4) * 0.7, Math.sin(a) * 1.5]}>
               <octahedronGeometry args={[i % 2 ? 0.085 : 0.12, 0]} />
-              <meshStandardMaterial color={i % 2 ? '#c6fff0' : '#8fe0cb'} emissive="#2b887b" emissiveIntensity={1.4} metalness={0.8} roughness={0.18} />
+              <meshStandardMaterial color={i % 2 ? '#d0d0c8' : '#aeb0a8'} emissive="#77786f" emissiveIntensity={0.18} metalness={0.8} roughness={0.18} />
             </mesh>
           </Float>
         );
@@ -72,7 +72,7 @@ function OrbitField() {
         <bufferGeometry>
           <bufferAttribute attach="attributes-position" args={[points, 3]} />
         </bufferGeometry>
-        <pointsMaterial color="#a9d9ce" size={0.018} transparent opacity={0.58} sizeAttenuation />
+        <pointsMaterial color="#85877f" size={0.014} transparent opacity={0.34} sizeAttenuation />
       </points>
     </group>
   );
@@ -93,12 +93,12 @@ function SceneContents() {
   });
   return (
     <>
-      <color attach="background" args={['#050a0b']} />
-      <fog attach="fog" args={['#050a0b', 9, 28]} />
-      <ambientLight intensity={0.55} />
-      <pointLight position={[2, 3, 5]} intensity={38} color="#b5ffe9" distance={18} />
-      <pointLight position={[-5, -2, -1]} intensity={24} color="#236c78" distance={16} />
-      <spotLight position={[0, 7, 4]} intensity={18} angle={0.55} penumbra={0.8} color="#a4f8df" />
+      <color attach="background" args={['#f5f4ef']} />
+      <fog attach="fog" args={['#f5f4ef', 9, 28]} />
+      <ambientLight intensity={1.25} />
+      <pointLight position={[2, 3, 5]} intensity={24} color="#ffffff" distance={18} />
+      <pointLight position={[-5, -2, -1]} intensity={8} color="#aeb2aa" distance={16} />
+      <spotLight position={[0, 7, 4]} intensity={12} angle={0.55} penumbra={0.8} color="#ffffff" />
       <Stars radius={70} depth={38} count={1300} factor={2.2} saturation={0.15} fade speed={0.2} />
       <OrbitField />
       <Core />
