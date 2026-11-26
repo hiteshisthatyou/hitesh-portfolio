@@ -1816,3 +1816,166 @@ html body main .sql-example *{color:#20372c!important}
 html body main .sql-example pre,
 html body main .sql-example pre *{background:#172b25!important;color:#fcfff8!important}
 html body main .sql-example .tag{background:#e9e8ff!important;color:#41499f!important}
+
+
+/* FINAL SITE-WIDE HYPERBLOOM ACCESSIBILITY PASS
+   Light surfaces always use deep botanical ink. Dark surfaces are explicit exceptions. */
+:root{
+  --hb-paper:#f5f8ef;
+  --hb-card:#fcfff8;
+  --hb-ink:#20372c;
+  --hb-body:#40584a;
+  --hb-muted:#586b5e;
+  --hb-line:#d4e1d3;
+  --hb-forest:#244d3b;
+  --hb-lime:#d8f36b;
+  --hb-lilac:#e9e8ff;
+}
+
+/* Case-study routes: every text node sits on a light surface. */
+html body main.case-page,
+html body main.case-page *{
+  color:var(--hb-ink)!important;
+}
+html body main.case-page{
+  background:var(--hb-paper)!important;
+}
+html body main.case-page .case-topbar{
+  background:rgba(245,248,239,.97)!important;
+  border-color:var(--hb-line)!important;
+}
+html body main.case-page .case-wordmark,
+html body main.case-page .case-page h1,
+html body main.case-page h1,
+html body main.case-page h2,
+html body main.case-page h3,
+html body main.case-page strong{
+  color:#172b25!important;
+}
+html body main.case-page .case-hero{
+  background:linear-gradient(120deg,#e7f2e4 0%,#eeeeff 68%,#ffe9e0 100%)!important;
+  border-color:var(--hb-line)!important;
+}
+html body main.case-page .case-deck,
+html body main.case-page .case-section>div:last-child>p,
+html body main.case-page .case-flow-head p,
+html body main.case-page .case-flow-note,
+html body main.case-page .case-outcomes-head p,
+html body main.case-page .case-scope p,
+html body main.case-page .case-flow-step small{
+  color:#465b4d!important;
+}
+html body main.case-page .case-eyebrow,
+html body main.case-page .case-section-label,
+html body main.case-page .case-section-label *,
+html body main.case-page .case-hero-meta,
+html body main.case-page .case-hero-foot,
+html body main.case-page .case-breadcrumb,
+html body main.case-page .case-breadcrumb *,
+html body main.case-page .case-flow-index,
+html body main.case-page .case-outcome>span{
+  color:#526b5b!important;
+}
+html body main.case-page .case-pullquote{
+  background:#e9e8ff!important;
+  border-left:3px solid #7778e8!important;
+  color:#263b52!important;
+}
+html body main.case-page .case-flow-step,
+html body main.case-page .case-scope{
+  background:#eaf2e7!important;
+  border-color:#cfdfd0!important;
+}
+html body main.case-page .case-flow-step strong,
+html body main.case-page .case-outcome strong{
+  color:#20372c!important;
+}
+html body main.case-page .case-tool-list span{
+  display:inline-flex;
+  align-items:center;
+  background:#e7f2e4!important;
+  border:1px solid #c9dfcb!important;
+  color:#244d3b!important;
+}
+html body main.case-page .case-next-links a,
+html body main.case-page .case-footer a{
+  color:#315f4b!important;
+  border-color:#cbdacb!important;
+}
+html body main.case-page .case-footer{
+  color:#526b5b!important;
+  border-color:#cbdacb!important;
+}
+
+/* Homepage light panels and chips. */
+html body main .project-card,
+html body main .lens-panel,
+html body main .lab-output,
+html body main .decision-controls,
+html body main .skill-group,
+html body main .method-step{
+  color:var(--hb-ink)!important;
+}
+html body main .project-card :is(h1,h2,h3,h4,p,span,strong,small,a,button),
+html body main .lens-panel :is(h1,h2,h3,h4,p,span,strong,small,a,button),
+html body main .lab-output :is(h1,h2,h3,h4,p,span,strong,small,a,button),
+html body main .decision-controls :is(h1,h2,h3,h4,p,span,strong,small,a,button),
+html body main .skill-group :is(h1,h2,h3,h4,p,span,strong,small,a,button),
+html body main .method-step :is(h1,h2,h3,h4,p,span,strong,small,a,button){
+  color:var(--hb-ink)!important;
+}
+html body main .project-card>p,
+html body main .lens-panel>p,
+html body main .lab-output>p,
+html body main .decision-controls>p,
+html body main .method-step>p{
+  color:#465b4d!important;
+}
+html body main .role-tags span,
+html body main .lens-proof span,
+html body main .certs span,
+html body main .skill-group span{
+  background:#e7f2e4!important;
+  border:1px solid #c9dfcb!important;
+  color:#244d3b!important;
+}
+html body main .filters button.active,
+html body main .lens-tabs button.active{
+  background:#244d3b!important;
+  color:#fff!important;
+  border-color:#244d3b!important;
+}
+html body main .filters button.active *,
+html body main .lens-tabs button.active *{color:#fff!important}
+html body main .button.light,
+html body main .button.light *{
+  background:#d8f36b!important;
+  color:#20372c!important;
+  border-color:#d8f36b!important;
+}
+html body main .section-ink .dash-intro,
+html body main .section-ink .dash-intro *{
+  color:#20372c!important;
+}
+html body main .section-ink .dash-intro .tag{
+  background:#e9e8ff!important;
+  color:#41499f!important;
+  border-color:#cbc9ff!important;
+}
+html body main .section-ink .dash-intro .result-number strong{color:#315f4b!important}
+html body main .section-ink .funnel,
+html body main .section-ink .funnel *{color:#f7fff3!important}
+html body main .decision-result,
+html body main .decision-result *{color:#f7fff3!important}
+html body main .decision-result .tag{
+  background:#e9e8ff!important;color:#41499f!important;border-color:#cbc9ff!important;
+}
+html body main .sql-example>div,
+html body main .sql-example>div *{color:#20372c!important}
+html body main .sql-example>div .tag{
+  background:#e9e8ff!important;color:#41499f!important;
+}
+html body main .sql-example pre,
+html body main .sql-example pre *{
+  background:#172b25!important;color:#f7fff3!important;
+}
