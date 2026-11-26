@@ -1059,3 +1059,80 @@ a{color:inherit}
  .project-card:hover,.button.dark:hover{transform:none}
 }
 .motion-off .project-card,.motion-off .button.dark{transition:none}
+
+
+
+/* HITESH 3.1 — contrast correction across every section */
+:root{
+  --ink:#f4f6ef;
+  --muted:#c0c8b8;
+  --line:#394336;
+  --soft:#1b2319;
+}
+body,main{color:#f0f3e9}
+main p{color:#c0c8b8}
+main h1,main h2,main h3,main h4,main strong{color:#f4f6ef}
+main small{color:#b5bfad}
+main label{color:#d9e1d2}
+main li{color:#c7d0bf}
+main .eyebrow,main .hero-kicker,main .hero-meta,main .hero-bottom,
+main .tag,main .career-top,main .project-card-top,main .portrait-note,
+main .case-section-label,main .case-breadcrumb,main .case-hero-meta,
+main .case-hero-foot,main .case-flow-index,main .case-eyebrow{
+  color:#b7c5a9;
+}
+main .section-head>p,main .story-aside,main .career-main>p,
+main .career-proof span,main .metric small,main .metric-foot,
+main .case-deck,main .case-section>div:last-child>p,
+main .case-flow-head>p,main .case-flow-note,main .case-scope p,
+main .lens-panel p,main .lab-output p,main .dash-intro p,
+main .sql-example p,main .recruiter>div>p:not(.eyebrow),
+main .video-card p,main .closing-line,main .education-row p,
+main .education-row small,main .photo-tile small,main .instagram-note{
+  color:#c0c9b8!important;
+}
+main .project-card h3,main .project-card strong,main .skill-group h3,
+main .method-step h3,main .lens-panel h3,main .lab-output h3,
+main .video-card h3,main .career-main h3,main .career-main h4,
+main .case-section h2,main .case-tools h2,main .case-outcomes h2,
+main .case-next h2,main .case-flow-head h2,main .education-row h3{
+  color:#f4f6ef!important;
+}
+main .project-card>p,main .case-detail p,main .detail-list,
+main .case-flow-step small,main .case-tool-list span,
+main .case-outcome strong,main .case-scope p{
+  color:#c5cebd!important;
+}
+main .project-card-top,main .career-index,main .career-top,
+main .case-section-label small,main .case-outcome>span{
+  color:#aebd9f!important;
+}
+main .skill-group span,main .role-tags span,main .certs span,
+main .lens-proof span,main .case-tool-list span{
+  background:#20291e!important;color:#e0e9d8!important;border-color:#46543d!important;
+}
+main .expand,main .case-read-link,main .case-quick-toggle,
+main .text-link,main .contact-links a,main .contact-links button{
+  color:#e7efdf!important;
+}
+main .filters button,main .lens-tabs button{
+  color:#d2dccb;border-color:#596650;
+}
+main .filters button.active,main .lens-tabs button.active{
+  color:#0b0d0b!important;background:#b6f36b!important;
+}
+main input,main select,main textarea{
+  color:#f0f3e9;background:#151b14;border-color:#56624f;
+}
+main input::placeholder,main textarea::placeholder{color:#aeb9a5}
+.case-page p{color:#c0c9b8}
+.case-page h1,.case-page h2,.case-page h3,.case-page strong{color:#f4f6ef}
+.case-page .case-section-label small,.case-page .case-breadcrumb,
+.case-page .case-hero-meta,.case-page .case-hero-foot{color:#b7c5a9}
+.case-page .case-deck,.case-page .case-section>div:last-child>p,
+.case-page .case-flow-head p,.case-page .case-flow-note,
+.case-page .case-scope p{color:#c0c9b8}
+@media(prefers-contrast:more){
+  main p,main small,main li,.case-page p{color:#e1e8dc!important}
+  main h1,main h2,main h3,.case-page h1,.case-page h2{color:#fff!important}
+}
