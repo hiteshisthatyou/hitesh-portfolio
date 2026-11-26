@@ -1285,3 +1285,13 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
 .method-story:has(.method-step-2.in-view) .method-progress i:nth-child(-n+2),
 .method-story:has(.method-step-3.in-view) .method-progress i{transform:scaleX(1);background:#27845f}
 .career-proof.metric-quarters strong{font-size:clamp(34px,3.5vw,48px)!important;white-space:normal!important;text-wrap:balance;max-width:220px}
+
+
+/* Contact number only: restrained crimson-to-blue typography, original theme untouched */
+.contact-phone-number{
+ background:linear-gradient(105deg,#bd5158 0%,#98677b 48%,#527da8 100%);
+ -webkit-background-clip:text;
+ background-clip:text;
+ -webkit-text-fill-color:transparent;
+ color:transparent;
+}
