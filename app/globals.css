@@ -1313,3 +1313,34 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
 .contact-phone-number{opacity:1!important;visibility:visible!important}
 .contact-phone-actions a{background:#171815!important;color:#fffefa!important;-webkit-text-fill-color:#fffefa!important;border:1px solid #171815!important;opacity:1!important;visibility:visible!important}
 .contact-phone-actions a svg{color:#fffefa!important;stroke:#fffefa!important;opacity:1!important;visibility:visible!important}
+
+
+/* Restore the career proof figures without changing card layout or copy. */
+.career-proof.metric-quarters strong{
+  display:block!important;
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+  font-size:clamp(30px,3vw,42px)!important;
+  line-height:1.08!important;
+  letter-spacing:-.045em!important;
+  white-space:nowrap!important;
+  text-wrap:nowrap!important;
+  max-width:none!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.career-proof.metric-volume strong,
+.career-proof.metric-volume strong span{
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.career-proof.metric-volume strong{
+  font-size:clamp(32px,3.2vw,46px)!important;
+  line-height:1.04!important;
+}
+.career-proof.metric-volume strong i{
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+}
