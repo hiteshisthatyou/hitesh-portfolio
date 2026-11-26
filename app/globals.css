@@ -2070,3 +2070,15 @@ main .decision-result .priority-track span{background:#3155e7!important}
 .funnel-row>b{color:#171923!important;font-variant-numeric:tabular-nums}
 .decision-result>strong.decision-score>span{color:#171923!important;-webkit-text-fill-color:#171923!important;opacity:1!important;visibility:visible!important;text-shadow:none!important}
 .decision-result>strong.decision-score>small{color:#68736d!important;-webkit-text-fill-color:#68736d!important;opacity:1!important;visibility:visible!important}
+
+
+/* Contact section contrast fix: keep the existing layout, make every action readable */
+.closing{background:#f5f4ef!important;color:#171923!important}
+.closing .direct-contact-title{color:#171923!important;opacity:1!important;-webkit-text-fill-color:#171923!important}
+.closing .direct-contact-number{color:#171923!important;-webkit-text-fill-color:#171923!important;background:none!important;opacity:1!important}
+.closing .direct-contact-actions a{background:#171923!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #171923!important;opacity:1!important;visibility:visible!important}
+.closing .direct-contact-actions a svg{color:#fff!important;stroke:#fff!important;opacity:1!important}
+.closing .closing-content .eyebrow{color:#68736d!important;-webkit-text-fill-color:#68736d!important}
+.closing .closing-line,.closing .contact-links a,.closing .contact-links button{color:#171923!important;-webkit-text-fill-color:#171923!important;opacity:1!important}
+.closing .button.light{background:#171923!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border-color:#171923!important}
+.closing .button.light svg{color:#fff!important;stroke:#fff!important}
