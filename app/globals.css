@@ -2048,3 +2048,14 @@ main button:focus-visible,main a:focus-visible,main input:focus-visible,main sel
 main .decision-result .priority-track{background:#d4d7df!important}
 main .decision-result .priority-track span{background:#3155e7!important}
 @media(max-width:850px){.nav,.nav.open{background:#f5f4ef!important;border-color:#d6d8dc!important}.nav a{color:#171923!important}}
+
+
+/* Minimal direct-contact close */
+.direct-contact-title{margin:0 0 clamp(26px,4vw,48px)!important}
+.direct-contact-number{display:inline-block;color:inherit!important;text-decoration:none;font:500 clamp(48px,10vw,124px)/.95 Georgia,serif;letter-spacing:-.065em;white-space:nowrap;max-width:100%;transition:opacity .25s,transform .45s cubic-bezier(.16,1,.3,1)}
+.direct-contact-number:hover{opacity:.78;transform:translateX(6px)}
+.direct-contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:clamp(28px,4vw,46px)}
+.direct-contact-actions a{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:142px;padding:14px 22px;background:#171923!important;color:#fff!important;border:1px solid #171923!important;border-radius:2px;text-decoration:none;font-size:14px;font-weight:600;transition:transform .25s,background .25s,color .25s}
+.direct-contact-actions a:hover{background:#30313a!important;color:#fff!important;transform:translateY(-3px)}
+.direct-contact-actions svg{width:17px;height:17px}
+@media(max-width:520px){.direct-contact-number{font-size:clamp(40px,10.5vw,58px)}.direct-contact-actions a{min-width:132px}}
