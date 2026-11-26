@@ -1632,3 +1632,20 @@ html body main .section-ink .dash-intro,
 html body main .section-ink .dash-intro :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time,dt,dd,th,td):not(#contrast-exempt){
   color:#29251f!important;
 }
+
+
+/* Keep the remaining editorial cards on the same light, readable gallery surface. */
+html body main .method-step,
+html body main .video-card,
+html body main .instagram-card{
+  background:#fffdf8!important;
+  border-color:#ded7ca!important;
+  color:#29251f!important;
+}
+html body main .method-step :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time):not(#contrast-exempt),
+html body main .video-card :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time):not(#contrast-exempt),
+html body main .instagram-card :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time):not(#contrast-exempt){
+  color:#29251f!important;
+}
+html body main .method-step .method-line{background:#e8dfcf!important}
+html body main .method-step .method-line i{background:#3159c9!important}
