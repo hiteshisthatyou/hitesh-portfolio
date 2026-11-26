@@ -1306,3 +1306,10 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
 .funnel-row>b{font-variant-numeric:tabular-nums}
 .decision-result>strong.decision-score>span{color:#171923!important;-webkit-text-fill-color:#171923!important;opacity:1!important;visibility:visible!important;text-shadow:none!important}
 .decision-result>strong.decision-score>small{color:#68736d!important;-webkit-text-fill-color:#68736d!important;opacity:1!important;visibility:visible!important}
+
+
+/* Contact action visibility only. Preserve the selected preview exactly elsewhere. */
+.contact-phone>span{color:#686b62!important;-webkit-text-fill-color:#686b62!important;opacity:1!important}
+.contact-phone-number{opacity:1!important;visibility:visible!important}
+.contact-phone-actions a{background:#171815!important;color:#fffefa!important;-webkit-text-fill-color:#fffefa!important;border:1px solid #171815!important;opacity:1!important;visibility:visible!important}
+.contact-phone-actions a svg{color:#fffefa!important;stroke:#fffefa!important;opacity:1!important;visibility:visible!important}
