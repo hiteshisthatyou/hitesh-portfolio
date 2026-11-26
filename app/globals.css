@@ -1117,3 +1117,37 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
  .reveal{filter:none!important;transform:none!important}
  .method-step:before,.method-line i,.career-card:after{transition:none!important}
 }
+
+
+/* HEADING ORBITS · small kinetic objects give each chapter its own motion signature */
+.section-head>div,.chapter-directory-head,.story-grid>div:first-child,.method-heading{position:relative}
+.heading-orbit{position:absolute;z-index:3;right:-clamp(34px,5vw,78px);top:-clamp(42px,5vw,68px);width:clamp(100px,12vw,164px);height:clamp(92px,10vw,138px);pointer-events:none;isolation:isolate}
+.heading-orbit i{position:absolute;display:block}
+.heading-orbit .orbit-ring{width:76%;height:76%;left:10%;top:8%;border:1px solid rgba(39,132,95,.36);border-radius:50%;transform:rotate(-28deg) scaleY(.58);animation:heading-orbit-spin 13s linear infinite}
+.heading-orbit .orbit-ring:after{content:"";position:absolute;inset:13%;border:1px dashed rgba(23,24,21,.16);border-radius:50%}
+.heading-orbit .orbit-core{width:17px;height:17px;left:42%;top:33%;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fffefa 0 8%,#b8c5ba 24%,#27845f 72%,#174d39 100%);box-shadow:0 8px 22px rgba(39,132,95,.2);animation:heading-core-float 4.8s ease-in-out infinite}
+.heading-orbit .orbit-diamond{width:11px;height:11px;left:76%;top:61%;background:#d5d7ce;border:1px solid rgba(23,24,21,.25);transform:rotate(45deg);animation:heading-diamond-drift 6s ease-in-out infinite}
+.heading-orbit .orbit-dot{width:6px;height:6px;left:12%;top:72%;border-radius:50%;background:#27845f;box-shadow:0 0 0 5px rgba(39,132,95,.09);animation:heading-dot-pulse 3.2s ease-in-out infinite}
+.heading-orbit .orbit-cross{width:14px;height:14px;right:4%;top:10%;opacity:.48;animation:heading-cross-turn 12s linear infinite}
+.heading-orbit .orbit-cross:before,.heading-orbit .orbit-cross:after{content:"";position:absolute;background:#777970;left:6px;top:0;width:1px;height:14px}
+.heading-orbit .orbit-cross:after{transform:rotate(90deg)}
+@keyframes heading-orbit-spin{to{transform:rotate(332deg) scaleY(.58)}}
+@keyframes heading-core-float{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(9px,-13px,0)}}
+@keyframes heading-diamond-drift{0%,100%{transform:translate3d(0,0,0) rotate(45deg)}50%{transform:translate3d(-12px,10px,0) rotate(135deg)}}
+@keyframes heading-dot-pulse{0%,100%{transform:scale(.8);opacity:.55}50%{transform:scale(1.45);opacity:1}}
+@keyframes heading-cross-turn{to{transform:rotate(360deg)}}
+.heading-orbit:before{content:"";position:absolute;width:3px;height:3px;left:58%;top:4%;border-radius:50%;background:#b5b7ae;box-shadow:0 0 0 4px rgba(181,183,174,.12);animation:heading-dot-pulse 4s ease-in-out infinite reverse}
+.method-heading .heading-orbit{right:-8px;top:-56px}
+.story-grid>div:first-child .heading-orbit{right:4px;top:-52px}
+.chapter-directory-head .heading-orbit{right:8%;top:-44px}
+.section-head>div .heading-orbit{right:-20px;top:-46px}
+.heading-orbit{opacity:.9}
+.motion-off .heading-orbit i{animation-play-state:paused!important}
+@media(max-width:760px){
+ .heading-orbit{right:-14px!important;top:-40px!important;width:90px;height:82px;opacity:.68}
+ .heading-orbit .orbit-core{width:12px;height:12px}
+ .heading-orbit .orbit-diamond{width:8px;height:8px}
+ .heading-orbit .orbit-cross{transform:scale(.8)}
+ .section-head>div{padding-right:34px}
+}
+@media(prefers-reduced-motion:reduce){.heading-orbit i{animation:none!important}}
