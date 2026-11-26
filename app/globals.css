@@ -1939,3 +1939,112 @@ main button:focus-visible,main a:focus-visible,main input:focus-visible,main sel
 main .decision-result .priority-track{background:#424a5a!important}
 main .decision-result .priority-track span{background:#8295ff!important}
 @media(max-width:850px){.nav,.nav.open{background:#0b0d12!important;border-color:#3a4150!important}.nav a{color:#f5f6fa!important}}
+
+
+/* =========================================================
+   HITESH / CREATIVE SYSTEMS: LIGHT MODE
+   Warm paper, ink typography, cobalt and coral accents
+   ========================================================= */
+:root{
+  color-scheme:light!important;
+  --paper:#f5f4ef!important;
+  --white:#ffffff!important;
+  --ink:#171923!important;
+  --muted:#555c6a!important;
+  --muted-2:#687080!important;
+  --line:#d6d8dc!important;
+  --soft:#ebecef!important;
+  --deep:#171923!important;
+  --electric:#3155e7!important;
+  --signal:#e65336!important;
+  --acid:#d9ed62!important;
+  --accent:#3155e7!important;
+}
+html,body,main{background:#f5f4ef!important;color:#171923!important}
+body{background:#f5f4ef!important;color:#171923!important}
+::selection{background:#d9ed62!important;color:#171923!important}
+main :where(h1,h2,h3,h4,h5,h6,p,li,label,small,strong,em,b,dt,dd,figcaption,blockquote){color:#171923!important}
+main :where(.eyebrow,.hero-kicker,.hero-meta,.hero-bottom,.career-top,.project-card-top,.footer>span,.visual-index,.visual-coordinate,.vision-caption,.scan-label,.career-index,.case-section-label,.case-flow-index){color:#626978!important}
+main :where(.lede,.story-aside,.career-main>p,.detail-list,.project-card>p,.case-detail p,.lab-output p,.dash-intro p,.sql-example p,.recruiter>div>p:not(.eyebrow),.case-deck,.case-flow-note,.case-scope p,.case-outcomes-head p,.education-row p,.video-card p){color:#555c6a!important}
+main a,main button,.topbar a,.topbar button,.contact-links a,.contact-links button{color:#171923!important}
+.topbar,.nav,.nav.open,.case-topbar{background:rgba(245,244,239,.96)!important;color:#171923!important;border-color:#d6d8dc!important}
+.topbar .nav a,.case-topbar nav a,.case-wordmark,.case-breadcrumb,.case-breadcrumb a{color:#171923!important}
+.top-actions select,.icon-btn,.menu-btn{background:#fff!important;color:#171923!important;border:1px solid #c9cbd1!important}
+.hero,.section,.case-page,.utility-page,.utility-shell{background:#f5f4ef!important;color:#171923!important}
+.hero h1,.section h2,.closing h2,.case-page h1,.case-page h2,.case-page h3,.utility-page h1,.utility-page h2,.utility-page h3{color:#171923!important}
+.hero:before{background:#3155e7!important;opacity:.1!important;border-color:#171923!important}
+.section-tint,.journal{background:#ebecef!important;color:#171923!important}
+.metrics-band,.dashboard,.dash-intro,.project-card,.skill-group,.video-card,.lab-grid,.lab-selector,.case-flow-step,.case-scope,.chapter-directory,.consent,.instagram-card,.decision-grid,.decision-controls,.lens-panel,.framework,.education-row,.photo-slot,.case-hero{
+ background:#fff!important;color:#171923!important;border-color:#d6d8dc!important
+}
+.project-card,.skill-group,.video-card,.instagram-card,.case-flow-step{box-shadow:0 7px 22px rgba(23,25,35,.07)!important}
+.project-card h3,.skill-group h3,.education-row h3,.video-card h3,.lab-output h3,.dash-intro h3,.sql-example h3,.career-main h3,.career-proof strong{color:#171923!important}
+.project-card-top,.career-proof strong,.career-index,.case-section-label span,.case-flow-index,.case-outcome>span{color:#e65336!important}
+.career-card,.timeline,.career-proof,.case-detail,.education-row,.recruiter,.contact-links,.footer{border-color:#d6d8dc!important}
+.metric strong,.result-number strong{color:#3155e7!important}
+.metric span,.metric small,.metric-foot{color:#555c6a!important}
+.story-aside{border-left-color:#e65336!important}
+.career-proof{border-left-color:#3155e7!important}
+.filters button,.lens-tabs button,.lab-selector button{background:#fff!important;color:#171923!important;border:1px solid #c9cbd1!important}
+.filters button.active,.lens-tabs button.active{background:#3155e7!important;color:#fff!important;border-color:#3155e7!important}
+.lab-selector button.selected{color:#3155e7!important}
+.lab-output,.funnel{background:#ebecef!important;color:#171923!important}
+.lab-output p,.funnel *{color:#414856!important}
+.tag{background:#3155e7!important;color:#fff!important}
+.skill-group span,.role-tags span,.certs span,.lens-proof span,.case-tool-list span{background:#f0f3d9!important;color:#343d16!important;border:1px solid #d7df9c!important}
+.framework div{border-color:#e65336!important}
+.framework b{color:#626978!important}
+.framework span{color:#171923!important}
+.section-ink{background:#ebecef!important;color:#171923!important}
+.section-ink h2,.section-ink .section-head>p,.section-ink .eyebrow{color:#171923!important}
+.funnel-track,.priority-track{background:#d4d7df!important}
+.funnel-track div,.priority-track span{background:#3155e7!important}
+.sql-example pre{background:#171923!important;color:#f5f4ef!important;border:1px solid #343b4b!important}
+.sql-example pre *{color:#f5f4ef!important}
+.decision-result{background:#ebecef!important;color:#171923!important;border:1px solid #d6d8dc!important}
+.decision-result :where(h3,p,strong,small,span){color:#171923!important}
+.decision-result .tag{background:#3155e7!important;color:#fff!important}
+.decision-controls label{color:#171923!important}
+.decision-controls label strong{color:#3155e7!important}
+.lens-panel p{color:#555c6a!important}
+.photo-slot{background:#e3e5e8!important;color:#171923!important}
+.photo-slot small{color:#555c6a!important}
+.instagram-card,.instagram-card .instagram-media{background:#fff!important;color:#171923!important;border-color:#d6d8dc!important}
+.instagram-card .instagram-media a,.instagram-card .instagram-media p{color:#17202c!important}
+.portrait-frame{background:#3155e7!important}
+.portrait-note{background:#d9ed62!important;color:#171923!important}
+.portrait-stamp{background:#e65336!important;color:#fff!important}
+.photo-open{background:#d9ed62!important;color:#171923!important}
+.video-placeholder{background:#e3e7fb!important;color:#171923!important}
+.video-placeholder *{color:#171923!important}
+.closing{background:#ebecef!important;color:#171923!important;border-top:1px solid #d6d8dc!important}
+.closing :where(h2,p,.eyebrow,.closing-line,.contact-links a,.contact-links button){color:#171923!important}
+.button.dark{background:#171923!important;color:#fff!important;border:1px solid #171923!important}
+.button.light{background:#e65336!important;color:#fff!important;border:1px solid #e65336!important}
+.button:hover{box-shadow:4px 4px 0 #3155e7!important}
+.consent{background:#fff!important;color:#171923!important;border:1px solid #d6d8dc!important}
+.consent p{color:#171923!important}
+.consent button{background:#d9ed62!important;color:#171923!important;border-color:#aebb4d!important}
+.chapter-directory{background:#ebecef!important;color:#171923!important}
+.chapter-directory-head h2,.chapter-directory-head .eyebrow,.chapter-directory-grid a{color:#171923!important}
+.chapter-directory-head h2 span,.chapter-directory-grid a span{color:#3155e7!important}
+.chapter-directory-grid a small{color:#555c6a!important}
+.method-story{background:#e4e9ff!important;color:#171923!important}
+.method-story :where(h2,h3,p,span){color:#171923!important}
+.method-story h2 span{color:#3155e7!important}
+.case-page,.case-page *{color:#171923!important}
+.case-page .case-topbar{background:#f5f4ef!important}
+.case-page .case-hero{background:#e4e9ff!important;border:1px solid #3155e7!important}
+.case-page .case-hero h1{color:#171923!important}
+.case-page .case-pullquote{background:#3155e7!important;color:#fff!important}
+.case-page .case-pullquote *{color:#fff!important}
+.case-page .case-scope,.case-page .case-flow-step{background:#fff!important}
+.case-page .case-flow-step small,.case-page .case-footer{color:#555c6a!important}
+.case-page .case-next-links a,.case-page .case-footer a{color:#171923!important;border-color:#c9cbd1!important}
+main input,main select,main textarea{background:#fff!important;color:#171923!important;border:1px solid #aeb3bf!important}
+main input::placeholder,main textarea::placeholder{color:#687080!important;opacity:1!important}
+main input:focus,main select:focus,main textarea:focus{outline:2px solid #3155e7!important;outline-offset:2px!important}
+main button:focus-visible,main a:focus-visible,main input:focus-visible,main select:focus-visible,main textarea:focus-visible{outline:3px solid #3155e7!important;outline-offset:3px!important}
+main .decision-result .priority-track{background:#d4d7df!important}
+main .decision-result .priority-track span{background:#3155e7!important}
+@media(max-width:850px){.nav,.nav.open{background:#f5f4ef!important;border-color:#d6d8dc!important}.nav a{color:#171923!important}}
