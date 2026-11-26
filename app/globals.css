@@ -1742,3 +1742,31 @@ html body main .section-ink .dash-intro,html body main .section-ink .dash-intro 
 @media(max-width:620px){.hero h1{font-size:clamp(48px,13vw,72px)!important}.project-card{padding:25px!important}.hero-visual:after{right:12px;top:18px;font-size:28px!important}}
 @media(prefers-reduced-motion:reduce){.hero-visual,.project-card,.photo-tile,.button{transition:none!important;transform:none!important}}
 .motion-off .hero-visual,.motion-off .project-card,.motion-off .photo-tile,.motion-off .button{transition:none!important}
+
+
+/* Hyperbloom contrast repair: light panels inside dark sections must use dark ink. */
+html body main .section-ink .dash-intro,
+html body main .section-ink .dash-intro :is(h1,h2,h3,h4,h5,h6,p,span,strong,b,small,li,a,label,button,em,time){
+  color:#20372c!important;
+}
+html body main .section-ink .dash-intro .tag{
+  background:#e9e8ff!important;color:#41499f!important;border-color:#cbc9ff!important;
+}
+html body main .section-ink .dash-intro input[type="range"]{accent-color:#e87968!important}
+html body main .section-ink .dash-intro .result-number strong{color:#315f4b!important}
+html body main .section-ink .funnel,
+html body main .section-ink .funnel :is(span,b,p,strong,small){color:#f7fff3!important}
+html body main .filters button.active,
+html body main .lens-tabs button.active{
+  background:#244d3b!important;color:#fcfff8!important;border-color:#244d3b!important;
+}
+html body main .filters button.active *,
+html body main .lens-tabs button.active *{color:#fcfff8!important}
+html body main .lens-proof span{
+  display:inline-flex;background:#e7f2e4!important;color:#244d3b!important;
+  border:1px solid #c9dfcb!important;border-radius:999px!important;
+}
+html body main .lens-panel :is(h3,p,.tag){color:#24382e!important}
+html body main .lens-panel .tag{background:#e9e8ff!important;color:#41499f!important;border-color:#cbc9ff!important}
+html body main .lab-output .tag,
+html body main .lab-output .eyebrow{color:#41499f!important}
