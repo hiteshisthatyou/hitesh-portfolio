@@ -2092,3 +2092,48 @@ main.case-page .case-pullquote{background:#e9e8ff!important;color:#263b52!import
 main.case-page .case-next-links a,
 main.case-page .case-footer a{color:#315f4b!important;border-color:#cbdacb!important}
 main.case-page .case-footer span{color:#526b5b!important}
+
+
+/* HITESH 2026: visible identity, employer lockups and dependable motion */
+html body .topbar .wordmark-minimal{display:inline-flex!important;align-items:center!important;gap:11px!important;text-decoration:none!important}
+html body .brand-emblem{width:39px;height:39px;display:grid;place-items:center;position:relative;isolation:isolate;border-radius:50%;background:#20372c!important;color:#f7fff3!important;overflow:hidden;box-shadow:0 0 0 1px #20372c,0 0 0 4px #d8f36b}
+html body .brand-emblem i{font:700 22px/1 Georgia,serif!important;color:#f7fff3!important;transform:translate(-2px,-1px)}
+html body .brand-emblem b{position:absolute;right:5px;bottom:3px;font:700 9px/1 'DM Mono',monospace!important;color:#d8f36b!important}
+html body .brand-word{font:800 17px/1 Manrope,sans-serif!important;letter-spacing:.12em!important;color:#20372c!important}
+html body .brand-word>span{color:#d96f60!important}
+html body .employer-lockup{display:flex!important;align-items:center!important;gap:13px!important;margin:15px 0 8px!important;min-height:45px!important}
+html body .employer-lockup h3{margin:0!important;font:800 clamp(23px,2.6vw,31px)/1 Manrope,sans-serif!important;letter-spacing:-.045em!important;color:#20372c!important}
+html body .employer-symbol{width:39px;height:39px;display:grid;place-items:center;flex:0 0 39px;border-radius:12px;background:#20372c!important;color:#fff!important;font:800 21px/1 Manrope,sans-serif!important;box-shadow:inset 0 -3px 0 #d8f36b}
+html body .employer-phonepe .employer-symbol{background:#5f259f!important;color:#fff!important;box-shadow:inset 0 -3px 0 #f5a623}
+html body .employer-amazon-pay .employer-symbol{background:#172b25!important;color:#ffad33!important;box-shadow:inset 0 -3px 0 #ffad33}
+html body .employer-wint-wealth .employer-symbol{background:#dff4e9!important;color:#147b54!important;box-shadow:inset 0 -3px 0 #147b54}
+html body .career-main{min-width:0}
+html body .career-reveal{opacity:1}
+html body .career-reveal .career-main,
+html body .project-card,
+html body .method-step{transition:transform .55s cubic-bezier(.2,.8,.2,1),box-shadow .55s ease}
+html body .career-reveal:hover .career-main{transform:translateX(5px)}
+html body .project-card:hover{transform:translateY(-7px);box-shadow:0 20px 50px #20372c14}
+html body .method-step:hover{transform:translateY(-5px)}
+html body .ambient-orbit{position:absolute;z-index:0;pointer-events:none;width:clamp(280px,44vw,620px);height:clamp(280px,44vw,620px);top:125px;right:-11vw;opacity:.55}
+html body .ambient-orbit i{position:absolute;inset:0;border:1px solid #d96f6040;border-radius:50%;animation:hvOrbit 28s linear infinite}
+html body .ambient-orbit i:nth-child(2){inset:9%;border-color:#7778e866;animation-duration:36s;animation-direction:reverse}
+html body .ambient-orbit i:nth-child(3){inset:18%;border-color:#244d3b55;animation-duration:44s}
+@keyframes hvOrbit{to{transform:rotate(360deg)}}
+html body .hero{position:relative}
+html body .hero-copy,html body .hero-visual{position:relative;z-index:1}
+html body .scroll-progress{height:4px!important;background:linear-gradient(90deg,#d96f60,#7778e8,#d8f36b)!important;animation:scroll-meter linear both!important;animation-timeline:scroll(root)!important}
+html body .reveal{will-change:opacity,transform}
+html body .career-reveal{animation:hvCardIn .75s both}
+html body .career-reveal-2{animation-delay:.12s}
+html body .career-reveal-3{animation-delay:.24s}
+@keyframes hvCardIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+html body .poster-words .poster-line span{display:inline-block;animation:hvWordIn .9s cubic-bezier(.2,.8,.2,1) both}
+html body .poster-words .poster-line:nth-child(2) span{animation-delay:.14s}
+html body .poster-words .poster-line:nth-child(3) span{animation-delay:.28s}
+@keyframes hvWordIn{from{opacity:0;transform:translateY(35px) skewY(3deg)}to{opacity:1;transform:translateY(0) skewY(0)}}
+html body .motion-off .ambient-orbit i,
+html body .motion-off .career-reveal,
+html body .motion-off .poster-words .poster-line span{animation:none!important}
+@media(prefers-reduced-motion:reduce){html body .ambient-orbit i,html body .career-reveal,html body .poster-words .poster-line span{animation:none!important}}
+@media(max-width:850px){html body .ambient-orbit{top:260px;right:-35vw;opacity:.24}html body .brand-emblem{width:34px;height:34px}html body .employer-lockup{margin-top:12px!important}}
