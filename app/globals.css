@@ -1383,3 +1383,69 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
   font-style:normal!important;
   font-size:.62em!important;
 }
+
+
+/* Career proof panel: give the figures their own readable column and explicit typography. */
+@media (min-width:851px){
+  .career-card{grid-template-columns:70px minmax(0,1fr) minmax(250px,290px)!important}
+}
+.career-card .career-proof{
+  min-width:0!important;
+  width:100%!important;
+  align-self:stretch!important;
+  justify-content:center!important;
+  padding:22px 12px 22px 26px!important;
+  overflow:visible!important;
+}
+.career-card .career-proof strong{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:clamp(38px,4vw,54px)!important;
+  font-weight:400!important;
+  line-height:1.02!important;
+  letter-spacing:-.055em!important;
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+  opacity:1!important;
+  visibility:visible!important;
+  overflow:visible!important;
+  white-space:normal!important;
+}
+.career-card .career-proof.metric-volume strong{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:5px!important;
+  font-size:clamp(34px,3.5vw,48px)!important;
+}
+.career-card .career-proof.metric-volume strong span{
+  display:block!important;
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+  font:400 1em/1.02 Georgia,'Times New Roman',serif!important;
+  white-space:nowrap!important;
+}
+.career-card .career-proof.metric-volume strong i{
+  display:block!important;
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+  font:400 .65em/1 Georgia,'Times New Roman',serif!important;
+  padding:0!important;
+}
+.career-card .career-proof>span{
+  display:block!important;
+  max-width:220px!important;
+  margin-top:8px!important;
+  color:#62665d!important;
+  -webkit-text-fill-color:#62665d!important;
+  font:500 11px/1.55 'DM Sans',sans-serif!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+@media(max-width:850px){
+  .career-card .career-proof{padding:18px 0 4px!important}
+  .career-card .career-proof strong{font-size:clamp(38px,9vw,50px)!important}
+  .career-card .career-proof.metric-volume strong{font-size:clamp(34px,8vw,44px)!important}
+}
