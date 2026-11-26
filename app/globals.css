@@ -1344,3 +1344,42 @@ html{scroll-padding-top:clamp(82px,10vh,112px)}
   color:#27845f!important;
   -webkit-text-fill-color:#27845f!important;
 }
+
+
+/* Final career-metric color lock: solid theme green, never gradient/transparent text. */
+.career-proof.metric-quarters strong,
+.career-proof.metric-volume strong,
+.career-proof.metric-volume strong span,
+.career-proof.metric-volume strong i{
+  background:none!important;
+  background-image:none!important;
+  background-clip:border-box!important;
+  -webkit-background-clip:border-box!important;
+  color:#27845f!important;
+  -webkit-text-fill-color:#27845f!important;
+  opacity:1!important;
+  visibility:visible!important;
+  text-shadow:none!important;
+  filter:none!important;
+}
+.career-proof.metric-quarters strong{
+  font-size:clamp(34px,3.5vw,48px)!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  max-width:none!important;
+  text-wrap:nowrap!important;
+}
+.career-proof.metric-volume strong{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:3px!important;
+  font-size:clamp(32px,3.2vw,46px)!important;
+  line-height:1.04!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+}
+.career-proof.metric-volume strong i{
+  font-style:normal!important;
+  font-size:.62em!important;
+}
