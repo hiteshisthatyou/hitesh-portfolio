@@ -1770,3 +1770,49 @@ html body main .lens-panel :is(h3,p,.tag){color:#24382e!important}
 html body main .lens-panel .tag{background:#e9e8ff!important;color:#41499f!important;border-color:#cbc9ff!important}
 html body main .lab-output .tag,
 html body main .lab-output .eyebrow{color:#41499f!important}
+
+
+/* HYPERBLOOM FINAL CONTRAST PATCH
+   Scoped after legacy theme overrides so component text cannot inherit the dark-panel white. */
+html body main .section-ink .dash-intro,
+html body main .section-ink .dash-intro *{
+  color:#20372c!important;
+}
+html body main .section-ink .dash-intro .tag{
+  background:#e9e8ff!important;color:#41499f!important;border-color:#cbc9ff!important;
+}
+html body main .section-ink .dash-intro input[type="range"]{accent-color:#e87968!important}
+html body main .section-ink .dash-intro .result-number strong{color:#315f4b!important}
+html body main .section-ink .funnel,
+html body main .section-ink .funnel *{color:#f7fff3!important}
+html body main .section-ink .funnel .caveat{color:#d9e9dc!important}
+html body main .button.light,
+html body main a.button.light,
+html body main .button.light *,
+html body main a.button.light *{
+  background-color:#d8f36b!important;color:#20372c!important;border-color:#d8f36b!important;
+}
+html body main .role-tags span,
+html body main .lens-proof span,
+html body main .certs span,
+html body main .skill-group span{
+  background:#e7f2e4!important;color:#244d3b!important;border:1px solid #c9dfcb!important;
+}
+html body main .filters button.active,
+html body main .lens-tabs button.active,
+html body main .filters button.active *,
+html body main .lens-tabs button.active *{
+  background:#244d3b!important;color:#fcfff8!important;border-color:#244d3b!important;
+}
+html body main .decision-result,
+html body main .decision-result *{color:#fcfff8!important}
+html body main .decision-result .tag{
+  background:#e9e8ff!important;color:#41499f!important;border-color:#cbc9ff!important;
+}
+html body main .decision-result .priority-track{background:#526b5e!important}
+html body main .decision-result .priority-track span{background:#d8f36b!important}
+html body main .sql-example,
+html body main .sql-example *{color:#20372c!important}
+html body main .sql-example pre,
+html body main .sql-example pre *{background:#172b25!important;color:#fcfff8!important}
+html body main .sql-example .tag{background:#e9e8ff!important;color:#41499f!important}
