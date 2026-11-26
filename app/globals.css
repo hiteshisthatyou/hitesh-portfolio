@@ -1556,7 +1556,7 @@ main .lab-selector,main .education-row,main .footer,main .case-outcome-list,
 main .case-outcome,main .case-footer{border-color:#bdbdbd!important}
 
 /* Deliberately high-specificity text reset: cancels old muted/washed-out theme layers. */
-main *:not(svg):not(path):not(input):not(textarea):not(select):not(option):not(button):not(button *):not(pre):not(pre *):not(.tag):not(.tag *) :not(.portrait-stamp):not(.portrait-stamp *){
+main *:not(svg):not(path):not(input):not(textarea):not(select):not(option):not(button):not(button *):not(pre):not(pre *):not(.tag):not(.tag *):not(.portrait-stamp):not(.portrait-stamp *){
  color:#000000!important;
 }
 main .eyebrow,main .hero-kicker,main .hero-meta,main .hero-bottom,main .career-top,
