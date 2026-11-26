@@ -1495,3 +1495,32 @@ html,body,main,.hero,.section,.case-page,.case-hero,.case-section,.case-tools,.c
 .consent{background:#fff!important;border:1px solid #000!important;box-shadow:0 12px 30px rgba(0,0,0,.12)!important}
 .consent p{color:#000!important}.consent button{background:#fff!important;color:#000!important;border:1px solid #000!important}
 @media(max-width:850px){.nav{background:#fff!important;border-color:#000!important}.nav a{color:#000!important}}
+
+
+/* TYPOGRAPHY: SHARP, HIGH-CONTRAST INK ONLY */
+:root{--muted:#000!important;--muted-2:#000!important}
+body,body p,body small,body label,body li,body dt,body dd,
+body .eyebrow,body .hero-kicker,body .hero-meta,body .hero-bottom,
+body .career-top,body .career-index,body .project-card-top,
+body .portrait-note,body .photo-slot span,body .photo-slot small,
+body .footer>span,body .visual-index,body .visual-coordinate,
+body .vision-caption,body .scan-label,body .film-rail,
+body .metric span,body .metric small,body .metric-foot,
+body .story-aside,body .lede,body .career-main>p,body .detail-list,
+body .project-card>p,body .case-detail p,body .lab-output p,
+body .dash-intro p,body .sql-example p,body .closing-line,
+body .education-row p,body .education-row small,body .video-card p,
+body .case-deck,body .case-flow-head p,body .case-flow-note,
+body .case-scope p,body .case-outcomes-head p,
+body .case-section>div:last-child>p,body .caveat,
+body .lab-selector button,body .film-rail a,body .nav a,
+body .top-actions select,body .icon-btn,body .menu-btn,
+body .consent p{color:#000!important}
+body .button.dark,body .filters button.active,body .tag,
+body .sql-example pre,body .consent button{color:#fff!important}
+body .button.light,body .wordmark span,body .footer-sign span,
+body .result-number strong,body .case-outcome>span,
+body .case-flow-index,body .case-flow-step:not(:last-child):after,
+body .contact-links a:hover,body .contact-links button:hover,
+body .nav a:hover,body .text-link:hover{color:#d71920!important}
+body ::selection{color:#fff!important;background:#d71920!important}
