@@ -1352,3 +1352,144 @@ main .career-top,main .career-index,main .project-card-top{color:#898477!importa
  .metric,.closing h2,.scroll-cue i:after{animation:none!important}
  .project-card,.career-card,.button.dark{transition:none!important}
 }
+
+
+
+/* HITESH 7.0 | Gallery minimalism: monochrome, photographic, spacious */
+:root{
+  color-scheme:light;
+  --paper:#fff;--white:#fff;--ink:#171717;--muted:#777;
+  --line:#e8e8e8;--accent:#777;--soft:#f7f7f7;--deep:#171717;
+}
+html,body,main{background:#fff!important;color:#171717!important}
+body{font-family:'DM Sans',Arial,sans-serif}
+::selection{background:#171717;color:#fff}
+.topbar{background:rgba(255,255,255,.94)!important;border-color:#ededed!important;box-shadow:none!important}
+.wordmark,.wordmark-name{color:#171717!important}
+.wordmark span,.wordmark-mark,.footer-sign span{color:#777!important}
+.nav a,.top-actions select,.icon-btn,.menu-btn{color:#555!important}
+.nav a:hover,.text-link:hover{color:#111!important}
+.hero{background:#fff!important;min-height:min(850px,calc(100svh - 76px));}
+.hero:before{display:none!important}
+.hero:after{color:rgba(0,0,0,.025)!important}
+.hero h1,.section h2,.section-head h2,.closing h2,.case-page h1,.case-page h2{
+ font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important;
+ letter-spacing:-.055em!important;color:#171717!important
+}
+.hero h1{font-size:clamp(58px,8vw,112px)!important;line-height:.94!important}
+.hero h1 em,.hero h1 span{color:#777!important}
+.hero-kicker,.hero-meta,.hero-bottom,.eyebrow,.career-top,.career-index,.project-card-top{color:#888!important}
+.hero .descriptor{font-weight:500!important;color:#333!important}
+.hero .lede,.story-aside,.career-main>p,.section-head>p{color:#666!important}
+.live-dot{background:#777!important;box-shadow:0 0 0 4px #eee!important}
+.button.dark{background:#171717!important;color:#fff!important;border:1px solid #171717!important;border-radius:0!important;box-shadow:none!important}
+.button.light{background:#fff!important;color:#171717!important;border:1px solid #ddd!important;border-radius:0!important}
+.text-link,.expand{color:#333!important}
+.portrait-wrap{padding:0 0 0 36px!important}
+.portrait-frame{height:min(590px,66vw)!important;min-height:420px;background:#f3f3f3!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.portrait-frame img{filter:none!important;opacity:1!important}
+.portrait-frame:after{display:none!important}
+.portrait-stamp,.portrait-wrap:after{display:none!important}
+.portrait-note{background:#fff!important;color:#555!important;border:0!important}
+.portrait-caption{background:#171717!important;color:#fff!important;box-shadow:none!important}
+.hero-orbit,.hero-3d-object,.hero-word-poster,.hero-visual-object{display:none!important}
+.section{background:#fff!important}
+.section-tint,.journal{background:#f8f8f8!important}
+.metrics-band{background:#171717!important;color:#fff!important}
+.metric strong,.metric span{color:#fff!important}
+.metric small,.metric-foot{color:#bbb!important}
+.timeline,.career-card,.case-detail,.education-row{border-color:#e8e8e8!important}
+.career-card{background:transparent!important}
+.career-card:hover{background:#fafafa!important}
+.career-proof{border-color:#e8e8e8!important}
+.career-proof strong{color:#171717!important}
+.career-proof span{color:#777!important}
+.filters button,.lens-tabs button{border-radius:0!important;background:#fff!important;color:#555!important;border-color:#ddd!important}
+.filters button.active,.lens-tabs button.active{background:#171717!important;color:#fff!important;border-color:#171717!important}
+.project-grid{gap:1px!important;background:#e8e8e8!important}
+.project-card,.project-card:nth-child(3n+1){background:#fff!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.project-card:before,.project-card:after{display:none!important}
+.project-card:hover{background:#fafafa!important;transform:translateY(-2px)!important;box-shadow:none!important}
+.project-card h3,.lab-output h3,.lens-panel h3,.skill-group h3,.video-card h3,.career-main h3,.career-main h4{font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important;color:#171717!important}
+.project-card>p,.case-detail p,.detail-list{color:#666!important}
+.lab-grid,.decision-grid,.dashboard,.skill-group,.video-card{background:#fff!important;border-color:#e8e8e8!important;box-shadow:none!important}
+.lab-selector,.lab-selector button{border-color:#e8e8e8!important}
+.lab-selector button{color:#666!important}
+.lab-selector button.selected{color:#171717!important}
+.lab-output,.lens-panel,.dash-intro,.decision-controls{background:#f8f8f8!important;color:#171717!important;border-color:#e8e8e8!important}
+.lab-output p,.lens-panel p,.dash-intro p,.sql-example p{color:#666!important}
+.tag,.skill-group span,.role-tags span,.certs span,.lens-proof span{background:#f2f2f2!important;color:#444!important;border:1px solid #e8e8e8!important;border-radius:0!important}
+.framework div{border-color:#999!important}
+.framework b,.framework span{color:#444!important}
+.decision-result,.sql-example pre{background:#171717!important;color:#fff!important}
+.decision-result h3,.decision-result>strong{color:#fff!important}
+.decision-result p{color:#ccc!important}
+.decision-controls label{color:#555!important}
+.decision-controls label strong{color:#171717!important}
+.decision-controls input,.dash-intro input{accent-color:#171717!important}
+.result-number strong{color:#171717!important}
+.result-number span{color:#777!important}
+.funnel-track{background:#e8e8e8!important}
+.funnel-track div{background:#555!important}
+.funnel-row{color:#333!important}
+.education-row h3{font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important}
+.education-row p,.education-row small{color:#777!important}
+.photo-grid{gap:8px!important}
+.photo-tile,.photo-slot{background:#eee!important;border:0!important;border-radius:0!important}
+.photo-tile img{filter:none!important}
+.instagram-card{background:#fff!important;border:1px solid #eee!important;border-radius:0!important;box-shadow:none!important}
+.instagram-note{color:#777!important}
+.recruiter>div>p:not(.eyebrow),.video-card p{color:#666!important}
+.video-placeholder{background:#f2f2f2!important;color:#555!important}
+.closing{background:#171717!important;color:#fff!important}
+.closing h2{color:#fff!important}
+.closing-line{color:#ccc!important}
+.contact-links a,.contact-links button{color:#eee!important}
+.footer{background:#fff!important;color:#444!important;border-top:1px solid #eee!important}
+.footer>span{color:#888!important}
+.consent{background:#fff!important;color:#171717!important;border-color:#e8e8e8!important;box-shadow:0 8px 30px #00000012!important}
+.consent button{background:#fff!important;color:#171717!important;border-color:#ddd!important}
+main input,main select,main textarea{background:#fff!important;color:#171717!important;border-color:#ddd!important}
+main input::placeholder,main textarea::placeholder{color:#999!important}
+.chapter-directory{background:#f8f8f8!important;color:#171717!important}
+.chapter-directory a,.chapter-directory a b{color:#171717!important}
+.chapter-directory a small{color:#777!important}
+.film-rail{background:rgba(255,255,255,.92)!important;border-color:#eee!important;box-shadow:none!important}
+.film-rail span,.film-rail a{color:#666!important}
+.film-rail a:hover,.film-rail a:focus-visible{background:#171717!important;color:#fff!important}
+.case-page{background:#fff!important;color:#171717!important}
+.case-topbar{background:rgba(255,255,255,.94)!important;border-color:#eee!important;box-shadow:none!important}
+.case-wordmark,.case-page h1,.case-page h2,.case-page h3,.case-page strong{color:#171717!important}
+.case-wordmark span{color:#777!important}
+.case-topbar nav a,.case-breadcrumb a{color:#555!important}
+.case-breadcrumb,.case-hero-meta,.case-hero-foot{color:#888!important}
+.case-hero{background:#f8f8f8!important;border-color:#e8e8e8!important}
+.case-hero h1,.case-section h2,.case-tools h2,.case-outcomes h2,.case-next h2,.case-flow-head h2{font-family:Georgia,'Times New Roman',serif!important;font-weight:400!important;color:#171717!important}
+.case-deck,.case-section>div:last-child>p,.case-flow-head p,.case-flow-note,.case-scope p,.case-outcomes-head p{color:#666!important}
+.case-section,.case-tools,.case-outcomes,.case-next,.case-flow,.case-footer{border-color:#e8e8e8!important}
+.case-pullquote{background:#f8f8f8!important;border-color:#999!important;color:#333!important}
+.case-tool-list span{background:#f8f8f8!important;border-color:#e8e8e8!important;color:#555!important}
+.case-outcome-list,.case-outcome{border-color:#e8e8e8!important}
+.case-outcome>span,.case-flow-index{color:#777!important}
+.case-outcome strong,.case-flow-step strong{color:#171717!important}
+.case-scope,.case-flow-step{background:#f8f8f8!important;border-color:#e8e8e8!important}
+.case-next-links a,.case-footer a{color:#444!important;border-color:#e8e8e8!important}
+.case-footer{color:#888!important}
+.case-flow-step small,.case-flow-note{color:#666!important}
+.case-flow-step:not(:last-child):after{color:#777!important}
+@media(max-width:850px){
+ .nav{background:rgba(255,255,255,.98)!important;border-color:#eee!important}
+ .nav a{color:#444!important}
+ .hero{padding-top:50px;min-height:auto}
+ .portrait-wrap{padding:28px 0 0!important}
+ .portrait-frame{height:115vw!important;min-height:360px!important;max-height:560px!important}
+}
+@media(max-width:620px){
+ .hero h1{font-size:clamp(48px,14vw,76px)!important}
+ .section{padding-top:76px;padding-bottom:76px}
+ .project-card{padding:24px}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-copy>*,.portrait-wrap,.portrait-frame img,.hero-bottom span:first-child,.metric{animation:none!important}
+ .project-card,.career-card,.button.dark{transition:none!important}
+}
